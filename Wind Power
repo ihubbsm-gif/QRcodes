@@ -1,0 +1,135 @@
+<!-- HEADER TITLE -->
+<h1>SOURCES OF POWER - WIND POWER</h1>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+
+<div class="card-body">
+
+<p><strong>Class:</strong> 10</p>
+<p><strong>Subject:</strong> Geography</p>
+<p><strong>Book Name:</strong> Contemporary India – II</p>
+<p><strong>Chapter:</strong> Minerals and Energy Resources</p>
+
+</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+
+<div class="card-body">
+
+<ul>
+<li>Understand various sources of power used for electricity generation.</li>
+
+<li>Differentiate between renewable and non-renewable energy resources.</li>
+
+<li>Study the technology and working principles of modern wind turbines.</li>
+
+<li>Explore historical uses and advancements of windmills and wind pumps.</li>
+
+<li>Analyze environmental and economic impacts of wind energy.</li>
+
+</ul>
+
+</div>
+</div>
+
+<!-- SCIENCE INVOLVED -->
+
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Involved
+</div>
+
+<div class="card-body">
+
+<ul>
+
+<li>Wind possesses kinetic energy due to the movement of air.</li>
+
+<li>Wind turbines capture this kinetic energy through rotating blades.</li>
+
+<li>The rotating blades drive a generator that converts mechanical energy into electrical energy.</li>
+
+<li>Wind power is a renewable and clean source of energy.</li>
+
+<li>Electricity generation from wind reduces dependence on fossil fuels and lowers carbon emissions.</li>
+
+</ul>
+
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+
+<div class="card-body">
+
+<ul>
+
+<li><strong>Wind Farms:</strong> Large-scale renewable electricity generation.</li>
+
+<li><strong>Agriculture:</strong> Traditional windmills used for grinding grain and mechanical work.</li>
+
+<li><strong>Water Pumping:</strong> Wind pumps supply water for irrigation and rural communities.</li>
+
+<li><strong>Sustainable Development:</strong> Clean energy production with minimal environmental impact.</li>
+
+<li><strong>Rural Electrification:</strong> Providing electricity to remote areas.</li>
+
+</ul>
+
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+
+<div class="card cyan full-width">
+
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+
+<div class="card-body">
+
+<div class="gallery">
+
+<img src="img1.jpg" alt="Wind Turbine">
+
+<img src="img2.jpg" alt="Wind Farm">
+
+<img src="img3.jpg" alt="Windmill">
+
+<img src="img4.jpg" alt="Wind Pump">
+
+<img src="img5.jpg" alt="Renewable Energy">
+
+<img src="img6.jpg" alt="Electricity Generation">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
