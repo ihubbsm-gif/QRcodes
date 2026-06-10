@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dancing Balls</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f3f5f7;
+    padding:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.header{
+    background:#003b7a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.header h1{
+    font-size:3rem;
+    letter-spacing:2px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card-header{
+    padding:15px 20px;
+    font-size:1.4rem;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.yellow{border:3px solid #f0c54d;}
+.yellow .card-header{background:#fff6d7;}
+
+.green{border:3px solid #7ac943;}
+.green .card-header{background:#eaf8dd;}
+
+.blue{border:3px solid #5da9ff;}
+.blue .card-header{background:#eaf3ff;}
+
+.purple{border:3px solid #b97aff;}
+.purple .card-header{background:#f5ebff;}
+
+.pink{border:3px solid #ff7ab3;}
+.pink .card-header{background:#ffe9f3;}
+
+.orange{border:3px solid #ffb257;}
+.orange .card-header{background:#fff0dd;}
+
+.info-list{
+    list-style:none;
+}
+
+.info-list li{
+    padding:8px 0;
+    border-bottom:1px solid #eee;
+}
+
+.info-list li:last-child{
+    border:none;
+}
+
+.objective{
+    display:flex;
+    gap:10px;
+    margin-bottom:12px;
+}
+
+.objective i{
+    color:#2eaf46;
+    margin-top:4px;
+}
+
+.steps{
+    counter-reset:step;
+}
+
+.steps li{
+    list-style:none;
+    margin-bottom:15px;
+    display:flex;
+    align-items:center;
+}
+
+.steps li::before{
+    counter-increment:step;
+    content:counter(step);
+    width:35px;
+    height:35px;
+    background:#8a4fff;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:12px;
+    font-weight:bold;
+}
+
+.flow{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:15px;
+}
+
+.flow-item{
+    width:120px;
+    text-align:center;
+}
+
+.circle{
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    background:#dceeff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+}
+
+.arrow{
+    font-size:30px;
+    color:#777;
+}
+
+.features li{
+    margin-bottom:10px;
+}
+
+.application{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.application i{
+    font-size:35px;
+    color:#005ec7;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+}
+
+.quiz{
+    margin-bottom:15px;
+}
+
+.quiz strong{
+    color:#5c29c9;
+}
+
+.summary li{
+    margin-bottom:10px;
+}
+
+.footer{
+    margin-top:25px;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.explore{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.explore div{
+    background:#f5f7fa;
+    padding:15px;
+    border-radius:12px;
+    min-width:180px;
+}
+
+.qr{
+    margin-top:20px;
+}
+
+.qr img{
+    width:140px;
+}
+
+@media(max-width:700px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+    .header h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>DANCING BALLS</h1>
+</div>
+
+<div class="grid">
+
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<ul class="info-list">
+<li><b>Class:</b> 11th</li>
+<li><b>Subject:</b> Physics - II</li>
+<li><b>Chapter:</b> Mechanical properties of fluid (Chapter No: 2)</li>
+</ul>
+</div>
+</div>
+
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+<div class="card-body">
+
+<div class="objective">
+<i class="fas fa-check-circle"></i>
+<span>Understand the relationship between fluid pressure, velocity, and elevation.</span>
+</div>
+
+<div class="objective">
+<i class="fas fa-check-circle"></i>
+<span>Apply Bernoulli's principle to analyze phenomena like lift force, carburetor working, spinning ball design, and vacuum formation.</span>
+</div>
+
+</div>
+</div>
+
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Concept At A Glance
+</div>
+<div class="card-body">
+According to Bernoulli’s principle, where the velocity of a fluid is high, the pressure is low, and vice versa. 
+Air rushing over the ball reduces downward pressure, while atmospheric pressure from the sides and top balances the ball mid-air.
+</div>
+</div>
+
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-running"></i>
+Participate & Observe
+</div>
+<div class="card-body">
+<ol class="steps">
+<li>Open the valve to start the setup.</li>
+<li>Place a ping pong ball in the upward air jet through the nozzle.</li>
+<li>Observe the ball rise and stay steady.</li>
+<li>The ball dances and floats at that level without falling.</li>
+</ol>
+</div>
+</div>
+
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-project-diagram"></i>
+Flow Diagram
+</div>
+<div class="card-body">
+<div class="flow">
+
+<div class="flow-item">
+<div class="circle">💨</div>
+<p>High Velocity Jet</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="flow-item">
+<div class="circle">📉</div>
+<p>Low Pressure Zone</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="flow-item">
+<div class="circle">⚖️</div>
+<p>Surrounding Pressure Balances</p>
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="flow-item">
+<div class="circle">🏓</div>
+<p>Ball Mid-Air Suspension</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-star"></i>
+Key Features
+</div>
+<div class="card-body">
+<ul class="features">
+<li>Demonstrates fluid dynamics concepts.</li>
+<li>Illustrates Bernoulli's equation in an interactive way.</li>
+<li>Highlights the effects of atmospheric balancing forces.</li>
+<li>Shows real-time equilibrium without mechanical support.</li>
+</ul>
+</div>
+</div>
+
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-tools"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="application">
+<i class="fas fa-plane"></i>
+<div>
+<b>Aerodynamics</b><br>
+Lift force acting on airplane wings.
+</div>
+</div>
+
+<div class="application">
+<i class="fas fa-baseball-ball"></i>
+<div>
+<b>Sports</b><br>
+Aerodynamic design and physics of spinning balls in games.
+</div>
+</div>
+
+<div class="application">
+<i class="fas fa-cogs"></i>
+<div>
+<b>Engineering</b><br>
+Entrainment devices, carburetors, and various industrial applications.
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-info-circle"></i>
+Quick Facts
+</div>
+<div class="card-body">
+<table>
+<tr><td>Primary Principle</td><td>Bernoulli's Principle</td></tr>
+<tr><td>Key Variables Involved</td><td>Velocity & Pressure</td></tr>
+<tr><td>Required Object</td><td>Ping Pong Ball</td></tr>
+<tr><td>Balancing Force</td><td>Atmospheric Pressure</td></tr>
+</table>
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+
+<h2>Quiz Time</h2>
+
+<div class="quiz">
+<strong>Q1:</strong> What happens to fluid pressure where the velocity of the fluid is high?<br>
+The pressure becomes low.
+</div>
+
+<div class="quiz">
+<strong>Q2:</strong> Which physics principle explains the phenomenon of a dancing ball?<br>
+Bernoulli's Principle.
+</div>
+
+<div class="quiz">
+<strong>Q3:</strong> What force balances the ball from the sides and top to keep it mid-air?<br>
+Atmospheric pressure.
+</div>
+
+<div class="quiz">
+<strong>Q4:</strong> Name an engineering device that uses this principle.<br>
+A carburetor or entrainment device.
+</div>
+
+<div class="explore">
+<div>🖼 Image Gallery</div>
+<div>🎥 Video Demonstration</div>
+<div>❓ Interactive Quiz</div>
+<div>📚 Additional Reading</div>
+</div>
+
+<div class="qr">
+<h3>Scan To Learn More</h3>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=DancingBallsPhysics">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
