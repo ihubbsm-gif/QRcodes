@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before and After Dam</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>BEFORE AND AFTER DAM</h1>
+    <h2>(Water Resources)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> 10</p>
+<p><strong>Book Name:</strong> Contemporary India – II</p>
+<p><strong>Subject:</strong> Geography</p>
+<p><strong>Chapter:</strong> Water Resources</p>
+</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the concept of dams and their functions, such as water storage and power generation.</li>
+<li>Explore different types of dams and the engineering principles behind them.</li>
+<li>Analyze positive and negative impacts of dams on society and the environment.</li>
+<li>Develop critical thinking skills by evaluating dam projects and their trade-offs.</li>
+</ul>
+</div>
+</div>
+
+<!-- CONCEPT INVOLVED -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Concept Involved
+</div>
+<div class="card-body">
+<ul>
+<li>Dams manipulate water flow through a barrier, creating a reservoir upstream that allows for various functions.</li>
+<li>Purpose: Show the benefits and physical changes of constructing a dam in a narrow part of a deep river valley.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>Water flowing through a river is blocked by a dam, creating a reservoir.</li>
+<li>The stored water is collected behind the dam and regulated through gates.</li>
+<li>When released, the flowing water passes through turbines.</li>
+<li>The force of moving water rotates the turbines.</li>
+<li>The turbines drive generators to produce electricity.</li>
+<li>The controlled release of water also supports irrigation, drinking water supply, and flood management.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Water Supply:</strong> Reservoirs behind dams store freshwater for homes, industries, and mining sites.</li>
+<li><strong>Irrigation:</strong> Controlled water release from dams allows efficient irrigation in agriculture, boosting crop yields.</li>
+<li><strong>Hydropower:</strong> Falling water from dams is channeled to spin turbines, generating clean hydroelectric power.</li>
+<li><strong>Flood Control:</strong> Dams hold back excess water during heavy rains, preventing downstream flooding and protecting communities.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="beforeafterdam_thumbnail.png">
+<source src="beforeafterdam.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="beforeafterdam1.jpg" alt="Image 1">
+<img src="beforeafterdam2.jpg" alt="Image 2">
+<img src="beforeafterdam3.jpg" alt="Image 3">
+<img src="beforeafterdam4.jpg" alt="Image 4">
+<img src="beforeafterdam5.jpg" alt="Image 5">
+<img src="beforeafterdam6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
