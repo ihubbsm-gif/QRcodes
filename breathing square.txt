@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breathing Square</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>BREATHING SQUARE</h1>
+    <h2>(Optical Illusion & Visual Perception)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VII onwards</p>
+<p><strong>Topic:</strong> Optical Illusions & Visual Perception</p>
+<p><strong>Concepts:</strong> Geometry, Symmetry, Spatial Relationships</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Explain how the Breathing Square demonstrates optical illusions.</li>
+<li>Understand the principles of visual perception.</li>
+<li>Apply the concepts of optical illusions to practical situations.</li>
+<li>Analyze and evaluate visual effects in different fields.</li>
+<li>Develop an understanding of perception and spatial relationships.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE INVOLVED -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Involved
+</div>
+<div class="card-body">
+<ul>
+<li>The visual effect of expansion and contraction is an optical illusion.</li>
+<li>The illusion is created by the arrangement and movement of geometric shapes.</li>
+<li>The brain interprets the changing visual patterns as expansion or contraction.</li>
+<li>The effect demonstrates how human visual perception can be influenced.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>The setup consists of four equal-sized square pieces separated by narrow gaps.</li>
+<li>A red square is placed beneath the top layer.</li>
+<li>The centres of the four square quadrants align with the centre of the red square.</li>
+<li>When the red square rotates by 90°, it creates the illusion of expansion.</li>
+<li>When it rotates by 180°, it creates the illusion of contraction.</li>
+<li>The actual size of the squares remains unchanged throughout the motion.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Art Installations:</strong> Creates visually engaging and dynamic experiences.</li>
+<li><strong>Virtual Reality (VR):</strong> Enhances immersion and visual effects.</li>
+<li><strong>Psychological Research:</strong> Helps study visual perception and spatial relationships.</li>
+<li><strong>Product Design:</strong> Creates eye-catching packaging, logos, and branding materials.</li>
+<li><strong>Educational Tools:</strong> Demonstrates concepts of geometry, symmetry, and visual perception.</li>
+<li><strong>Marketing and Advertising:</strong> Captures attention and creates memorable visual experiences.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="breathingsquare_thumbnail.png">
+<source src="breathingsquare.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="breathingsquare1.jpg" alt="Image 1">
+<img src="breathingsquare2.jpg" alt="Image 2">
+<img src="breathingsquare3.jpg" alt="Image 3">
+<img src="breathingsquare4.jpg" alt="Image 4">
+<img src="breathingsquare5.jpg" alt="Image 5">
+<img src="breathingsquare6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
