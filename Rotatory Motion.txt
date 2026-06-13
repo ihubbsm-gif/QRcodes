@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rotatory Motion</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.brown{border:3px solid #c8a97e;}
+.brown .card-header{background:#fdf3e7;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>ROTATORY MOTION</h1>
+    <h2>(Circular Motion & Centripetal Force)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VII onwards</p>
+<p><strong>Topic:</strong> Rotatory Motion & Centripetal Force</p>
+<p><strong>Concepts:</strong> Angular Velocity, Moment of Inertia, Circular Motion</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Recognize that rotatory motion involves rotation about a fixed axis.</li>
+<li>Identify angular velocity and angular acceleration.</li>
+<li>Understand the concept of moment of inertia.</li>
+<li>Distinguish between linear and angular motion.</li>
+<li>Explain the concept of centripetal force.</li>
+<li>Understand why centripetal force is necessary for circular motion.</li>
+<li>Define centripetal force as a force directed towards the centre of a circle.</li>
+<li>Learn and apply the formula for centripetal force.</li>
+<li>Explore everyday examples of centripetal force.</li>
+<li>Relate the concept to vehicles, satellites, and planetary motion.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE INVOLVED -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Involved
+</div>
+<div class="card-body">
+<ul>
+<li>Centripetal force acts towards the centre of circular motion.</li>
+<li>It keeps a rotating object moving along a circular path.</li>
+<li>In this exhibit, centripetal force prevents the water from spilling.</li>
+<li>The inward force balances the circular motion of the water.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>Fill three-fourths of the circular bowls with water.</li>
+<li>Switch on the model to start rotation.</li>
+<li>Observe that the bowls rotate at high speed.</li>
+<li>Notice that the water does not spill.</li>
+<li>The inward centripetal force keeps the water in circular motion.</li>
+<li>The force acts continuously towards the centre of rotation.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Planetary Orbits:</strong> Gravity provides the centripetal force for planets.</li>
+<li><strong>Vehicle Turns:</strong> Friction between tyres and the road provides centripetal force.</li>
+<li><strong>Roller Coasters:</strong> Centripetal force keeps the cars on the track.</li>
+<li><strong>Satellites:</strong> Earth's gravity keeps satellites in orbit.</li>
+<li><strong>Spinning Objects:</strong> String tension keeps a spinning ball moving in a circle.</li>
+</ul>
+</div>
+</div>
+
+<!-- HISTORICAL BACKGROUND -->
+<div class="card brown">
+<div class="card-header">
+<i class="fas fa-history"></i>
+Historical Background
+</div>
+<div class="card-body">
+<ul>
+<li>The term <strong>"centripetal"</strong> comes from the Latin words <strong>"centrum"</strong> (center) and <strong>"petere"</strong> (to seek).</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="rotatorymotion_thumbnail.png">
+<source src="rotatorymotion.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="rotatorymotion1.jpg" alt="Image 1">
+<img src="rotatorymotion2.jpg" alt="Image 2">
+<img src="rotatorymotion3.jpg" alt="Image 3">
+<img src="rotatorymotion4.jpg" alt="Image 4">
+<img src="rotatorymotion5.jpg" alt="Image 5">
+<img src="rotatorymotion6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
