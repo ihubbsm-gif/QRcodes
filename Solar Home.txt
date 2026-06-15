@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Home</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.concept-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.concept-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.concept-box ul{
+padding-left:18px;
+margin:0;
+}
+.concept-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>SOLAR HOME</h1>
+    <h2>(Solar Energy & Photovoltaic Cells)</h2>
+</div>
+
+<div class="grid">
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Comprehend the principles of converting solar energy into electrical energy.</li>
+<li>Understand the working of photovoltaic (PV) cells.</li>
+<li>Explore the practical applications of solar energy in homes.</li>
+<li>Appreciate the benefits of renewable energy solutions.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENTIFIC CONCEPT -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Scientific Concept
+</div>
+<div class="card-body">
+<ul>
+<li>Solar energy is converted into electrical energy for household use.</li>
+<li>Photovoltaic (PV) cells convert sunlight directly into electricity.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>The model shows a house with solar panels installed on its roof.</li>
+<li>The panels convert sunlight into electricity.</li>
+<li>The generated electricity powers fans, lights, and other appliances.</li>
+<li>The model also demonstrates that electricity production decreases or stops when sufficient sunlight is unavailable, such as on cloudy days.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING OF SOLAR PANELS -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-solar-panel"></i>
+Working of Solar Panels (Photovoltaic Cells)
+</div>
+<div class="card-body">
+
+<div class="concept-box">
+<h4>🔲 Semiconductor Layers</h4>
+<ul>
+<li>A solar cell consists of two silicon layers.</li>
+<li><strong>N-type layer:</strong> Doped with phosphorus to provide extra electrons.</li>
+<li><strong>P-type layer:</strong> Doped with boron to create electron holes.</li>
+</ul>
+</div>
+
+<div class="concept-box">
+<h4>⚡ Junction Formation</h4>
+<ul>
+<li>Sunlight creates a photovoltaic effect at the junction of the two layers.</li>
+<li>This process enables the conversion of solar energy into electrical energy.</li>
+</ul>
+</div>
+
+<div class="concept-box">
+<h4>🔆 Electron Liberation</h4>
+<ul>
+<li>Photons from sunlight free electrons from the semiconductor atoms.</li>
+<li>The released electrons move towards the N-type layer.</li>
+</ul>
+</div>
+
+<div class="concept-box">
+<h4>💡 Electric Current Generation</h4>
+<ul>
+<li>The movement of electrons creates an electric current.</li>
+<li>The solar panel converts this current into usable electricity.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Residential & Commercial Use:</strong> Supplies electricity to homes and buildings.</li>
+<li><strong>Off-Grid Power:</strong> Provides electricity to remote and isolated areas.</li>
+<li><strong>Solar Water Heating:</strong> Heats water without conventional fuel.</li>
+<li><strong>Solar-Powered Vehicles:</strong> Supports clean transportation technologies.</li>
+<li><strong>Space Exploration:</strong> Powers satellites and spacecraft.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="solarhome_thumbnail.png">
+<source src="solarhome.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="solarhome1.jpg" alt="Image 1">
+<img src="solarhome2.jpg" alt="Image 2">
+<img src="solarhome3.jpg" alt="Image 3">
+<img src="solarhome4.jpg" alt="Image 4">
+<img src="solarhome5.jpg" alt="Image 5">
+<img src="solarhome6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
