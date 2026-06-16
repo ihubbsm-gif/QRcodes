@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercury Capsule</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.brown{border:3px solid #c8a97e;}
+.brown .card-header{background:#fdf3e7;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.concept-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.concept-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.concept-box ul{
+padding-left:18px;
+margin:0;
+}
+.concept-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>MERCURY CAPSULE</h1>
+    <h2>(Human Space Exploration & Project Mercury)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VIII onwards</p>
+<p><strong>Topic:</strong> Mercury Capsule & Project Mercury</p>
+<p><strong>Concepts:</strong> Space Exploration, Rocket Propulsion, Orbital Mechanics</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the basic principles and history of human space exploration.</li>
+<li>Learn about the design and function of the Mercury capsule.</li>
+<li>Explore the scientific advancements and technologies developed for space travel.</li>
+<li>Understand the objectives and significance of Project Mercury.</li>
+</ul>
+</div>
+</div>
+
+<!-- PROJECT MERCURY -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-rocket"></i>
+Project Mercury
+</div>
+<div class="card-body">
+<ul>
+<li>The Mercury capsule was part of NASA's Project Mercury (1958–1963).</li>
+<li>It was the first human spaceflight program of the United States.</li>
+<li>Primary objectives included orbiting a manned spacecraft around Earth.</li>
+<li>It investigated human capabilities in space.</li>
+<li>It safely recovered both the astronaut and the spacecraft.</li>
+</ul>
+</div>
+</div>
+
+<!-- HOW IT GOT ITS NAME -->
+<div class="card brown">
+<div class="card-header">
+<i class="fas fa-history"></i>
+How It Got Its Name
+</div>
+<div class="card-body">
+<ul>
+<li>Named after the Roman god Mercury, symbolizing speed and swiftness.</li>
+<li>The name reflected the project's goal of rapidly developing and launching manned space missions.</li>
+<li>It marked the beginning of the United States' first human spaceflight program.</li>
+</ul>
+</div>
+</div>
+
+<!-- KEY SCIENTIFIC PRINCIPLES -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Key Scientific Principles and Technologies
+</div>
+<div class="card-body">
+
+<div class="concept-box">
+<h4>🚀 Rocket Propulsion</h4>
+<ul>
+<li>Chemical rockets propel the spacecraft into orbit.</li>
+<li>They generate the thrust required for launch and space travel.</li>
+</ul>
+</div>
+
+<div class="concept-box">
+<h4>🌍 Orbital Mechanics</h4>
+<ul>
+<li>Studies the motion of objects in space.</li>
+<li>Involves calculating trajectories and orbital paths.</li>
+</ul>
+</div>
+
+<div class="concept-box">
+<h4>🧑‍🚀 Life Support Systems</h4>
+<ul>
+<li>Provide a habitable environment for astronauts.</li>
+<li>Include oxygen supply, temperature control, and waste management.</li>
+</ul>
+</div>
+
+<div class="concept-box">
+<h4>🔥 Heat Shields</h4>
+<ul>
+<li>Protect the spacecraft during atmospheric re-entry.</li>
+<li>Resist the intense heat generated during descent.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>The Mercury capsule was a cone-shaped module designed for one astronaut.</li>
+<li>It was launched using a Redstone or Atlas rocket.</li>
+<li>The spacecraft followed orbital or suborbital trajectories.</li>
+<li>The capsule could be controlled manually by the astronaut or remotely from Earth.</li>
+<li>After completing its mission, the capsule re-entered Earth's atmosphere.</li>
+<li>Parachutes were deployed and it landed safely in the ocean.</li>
+<li>The Navy recovered the capsule and astronaut.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li>Provides foundational knowledge for understanding later missions such as Gemini and Apollo.</li>
+<li>Helps explain the engineering behind safe and functional spacecraft design.</li>
+<li>Advances understanding of how the human body responds to space travel.</li>
+<li>Contributes to the development of modern human spaceflight programs.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="mercurycapsule_thumbnail.png">
+<source src="mercurycapsule.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="mercurycapsule1.jpg" alt="Image 1">
+<img src="mercurycapsule2.jpg" alt="Image 2">
+<img src="mercurycapsule3.jpg" alt="Image 3">
+<img src="mercurycapsule4.jpg" alt="Image 4">
+<img src="mercurycapsule5.jpg" alt="Image 5">
+<img src="mercurycapsule6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
