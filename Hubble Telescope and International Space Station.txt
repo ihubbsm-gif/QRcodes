@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hubble Telescope and International Space Station (ISS)</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:1.8rem;
+letter-spacing:2px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.section-title{
+font-size:1.15rem;
+font-weight:700;
+color:#003d91;
+margin:10px 0;
+padding-bottom:6px;
+border-bottom:2px solid #e0e0e0;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:1.5rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>HUBBLE TELESCOPE & INTERNATIONAL SPACE STATION (ISS)</h1>
+    <h2>(Space Technology & Exploration)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VIII onwards</p>
+<p><strong>Topic:</strong> Hubble Telescope & ISS</p>
+<p><strong>Concepts:</strong> Space Observatories, Microgravity Research, International Collaboration</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the purpose, design, and functions of the Hubble Space Telescope and the International Space Station (ISS).</li>
+<li>Learn about the scientific achievements and discoveries made possible by Hubble and the ISS.</li>
+<li>Appreciate the role of international collaboration in space exploration and research.</li>
+<li>Develop an understanding of modern space technologies and scientific investigations.</li>
+</ul>
+</div>
+</div>
+
+<!-- HUBBLE SPACE TELESCOPE -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-satellite"></i>
+Hubble Space Telescope (HST)
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🎯 Purpose</h4>
+<ul>
+<li>Launched in 1990.</li>
+<li>Designed to observe distant stars, galaxies, and other celestial objects.</li>
+<li>Operates in visible, ultraviolet, and near-infrared wavelengths.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🔧 Design</h4>
+<ul>
+<li>A large space-based observatory.</li>
+<li>Equipped with a 2.4-meter primary mirror.</li>
+<li>Contains cameras, spectrographs, sensors, and other scientific instruments.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🏆 Achievements</h4>
+<ul>
+<li>Captured deep-field images of the universe.</li>
+<li>Contributed to the discovery and study of exoplanets.</li>
+<li>Helped measure the expansion rate of the universe.</li>
+<li>Observed black holes, nebulae, and other celestial phenomena.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- ISS -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-rocket"></i>
+International Space Station (ISS)
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🎯 Purpose</h4>
+<ul>
+<li>A habitable artificial satellite and microgravity laboratory.</li>
+<li>Supports scientific research across multiple disciplines.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🔧 Design</h4>
+<ul>
+<li>A modular structure consisting of pressurized modules, solar arrays, and docking ports.</li>
+<li>Orbits Earth approximately every 90 minutes.</li>
+<li>Maintains an altitude of about 400 km above Earth.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🤝 Collaborators</h4>
+<ul>
+<li>Built and operated through international cooperation involving NASA, Roscosmos, JAXA, ESA, and CSA.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATIONS -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observations
+</div>
+<div class="card-body">
+
+<p class="section-title">🔭 Hubble Space Telescope</p>
+<div class="sub-box">
+<h4>Working</h4>
+<ul>
+<li>Operates outside Earth's atmosphere.</li>
+<li>Avoids atmospheric distortion and captures clearer images.</li>
+<li>Orbits Earth approximately every 97 minutes.</li>
+<li>Collects scientific data and transmits it to Earth for analysis.</li>
+</ul>
+</div>
+<div class="sub-box">
+<h4>Observations</h4>
+<ul>
+<li>Observes distant galaxies, nebulae, stars, and planets.</li>
+<li>Provides valuable information about the structure and evolution of the universe.</li>
+<li>Has contributed to numerous scientific discoveries and breakthroughs.</li>
+</ul>
+</div>
+
+<p class="section-title">🛰️ International Space Station (ISS)</p>
+<div class="sub-box">
+<h4>Working</h4>
+<ul>
+<li>Supports long-duration missions in space.</li>
+<li>Houses astronauts and cosmonauts in a microgravity environment.</li>
+<li>Facilitates experiments in biology, physics, astronomy, and Earth sciences.</li>
+</ul>
+</div>
+<div class="sub-box">
+<h4>Observations</h4>
+<ul>
+<li>Provides a unique platform for Earth observation.</li>
+<li>Studies climate patterns, natural disasters, and atmospheric phenomena.</li>
+<li>Conducts experiments that require microgravity conditions.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🔭 Hubble Space Telescope</h4>
+<ul>
+<li>Enhances understanding of the universe's structure, formation, and evolution.</li>
+<li>Supports the study of planets beyond our solar system.</li>
+<li>Contributes to the search for potentially habitable worlds.</li>
+<li>Inspires interest in science and astronomy through educational outreach and imagery.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🛰️ International Space Station (ISS)</h4>
+<ul>
+<li>Advances scientific knowledge through microgravity research.</li>
+<li>Tests new technologies and materials for future space missions.</li>
+<li>Demonstrates the benefits of international cooperation in science and exploration.</li>
+<li>Studies the effects of long-term spaceflight on the human body.</li>
+<li>Provides valuable insights for future missions to Mars and beyond.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="hubbleiss_thumbnail.png">
+<source src="hubbleiss.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="hubbleiss1.jpg" alt="Image 1">
+<img src="hubbleiss2.jpg" alt="Image 2">
+<img src="hubbleiss3.jpg" alt="Image 3">
+<img src="hubbleiss4.jpg" alt="Image 4">
+<img src="hubbleiss5.jpg" alt="Image 5">
+<img src="hubbleiss6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
