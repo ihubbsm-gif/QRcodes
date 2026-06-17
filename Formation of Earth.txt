@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formation of Earth</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.obs-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ffb65e;
+}
+.obs-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.obs-box ul{
+padding-left:18px;
+margin:0;
+}
+.obs-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.evidence-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #2ecc71;
+}
+.evidence-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.evidence-box ul{
+padding-left:18px;
+margin:0;
+}
+.evidence-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>FORMATION OF EARTH</h1>
+    <h2>(Origin, Differentiation & Evolution)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IV onwards</p>
+<p><strong>Topic:</strong> Formation of Earth</p>
+<p><strong>Concepts:</strong> Planetary Formation, Differentiation, Geological History</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the processes involved in the formation of Earth.</li>
+<li>Learn about the stages of Earth's early development and evolution.</li>
+<li>Develop critical thinking skills by examining scientific evidence related to Earth's formation.</li>
+<li>Appreciate Earth as a unique habitable planet within the solar system.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🌍 Formation of Earth</h4>
+<ul>
+<li>Earth formed about 4.6 billion years ago from a rotating cloud of gas and dust called the solar nebula.</li>
+<li>Small particles collided and combined to form larger bodies called planetesimals.</li>
+<li>Planetesimals merged to form protoplanets, including Earth.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>⚙️ Differentiation of Earth</h4>
+<ul>
+<li>As Earth grew, heat from collisions and radioactive decay caused partial melting.</li>
+<li>Heavier materials such as iron and nickel sank to the centre to form the core.</li>
+<li>Lighter materials formed the mantle and crust.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌱 Evolution of Earth</h4>
+<ul>
+<li>Continuous geological processes shaped Earth's surface over billions of years.</li>
+<li>The development of the atmosphere and oceans created conditions suitable for life.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATIONS -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observations
+</div>
+<div class="card-body">
+
+<div class="obs-box">
+<h4>🪨 Gravitational Accretion</h4>
+<ul>
+<li>Gravity caused dust and rock particles to clump together.</li>
+<li>These particles gradually formed planetesimals and protoplanets.</li>
+</ul>
+</div>
+
+<div class="obs-box">
+<h4>🔥 Layer Formation</h4>
+<ul>
+<li>Internal heat melted the young Earth.</li>
+<li>Heavy elements moved inward while lighter materials moved outward, forming distinct layers.</li>
+</ul>
+</div>
+
+<div class="obs-box">
+<h4>🌑 Evidence of Early Impacts</h4>
+<ul>
+<li>Ancient impact craters and planetary surfaces provide evidence of frequent collisions during Earth's early history.</li>
+<li>The Moon's cratered surface preserves records of these early impacts.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- OBSERVATIONAL EVIDENCE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-search"></i>
+Observational Evidence
+</div>
+<div class="card-body">
+
+<div class="evidence-box">
+<h4>☄️ Meteorites</h4>
+<ul>
+<li>Meteorites provide information about the composition of the early solar system.</li>
+<li>Their study helps scientists understand Earth's formation.</li>
+</ul>
+</div>
+
+<div class="evidence-box">
+<h4>🪨 Geological Record</h4>
+<ul>
+<li>Rocks and minerals reveal information about Earth's age and early development.</li>
+<li>They provide evidence of past geological processes.</li>
+</ul>
+</div>
+
+<div class="evidence-box">
+<h4>⏱️ Isotopic Dating</h4>
+<ul>
+<li>Radiometric dating techniques determine the age of rocks and geological events.</li>
+<li>These methods help establish the timeline of Earth's formation.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li>Helps scientists understand Earth's structure and composition.</li>
+<li>Supports the study of plate tectonics, volcanism, and erosion.</li>
+<li>Provides insights into Earth's geological history.</li>
+<li>Helps explain the evolution of life through fossil and environmental records.</li>
+<li>Contributes to planetary science and the study of other rocky planets.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="formationofearth_thumbnail.png">
+<source src="formationofearth.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="formationofearth1.jpg" alt="Image 1">
+<img src="formationofearth2.jpg" alt="Image 2">
+<img src="formationofearth3.jpg" alt="Image 3">
+<img src="formationofearth4.jpg" alt="Image 4">
+<img src="formationofearth5.jpg" alt="Image 5">
+<img src="formationofearth6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
