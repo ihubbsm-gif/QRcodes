@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Galaxy – Milky Way</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.obs-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ffb65e;
+}
+.obs-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.obs-box ul{
+padding-left:18px;
+margin:0;
+}
+.obs-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>OUR GALAXY – MILKY WAY</h1>
+    <h2>(Structure, Formation & Evolution)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VI onwards</p>
+<p><strong>Topic:</strong> The Milky Way Galaxy</p>
+<p><strong>Concepts:</strong> Galactic Structure, Star Formation, Black Holes</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the structure, components, and dynamics of the Milky Way galaxy.</li>
+<li>Learn about the formation and evolution of the Milky Way.</li>
+<li>Develop observational astronomy skills.</li>
+<li>Understand how telescopes help study our galaxy.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🌌 Structure of the Milky Way</h4>
+<ul>
+<li><strong>Galactic Bulge:</strong> Dense central region containing the supermassive black hole Sagittarius A*.</li>
+<li><strong>Galactic Disk:</strong> Contains spiral arms made of stars, gas, and dust where new stars form.</li>
+<li><strong>Galactic Halo:</strong> Surrounding spherical region containing old stars, globular clusters, and dark matter.</li>
+<li><strong>Galactic Bar:</strong> Bar-shaped structure of stars crossing the galactic centre.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>📏 Size and Scale</h4>
+<ul>
+<li>Approximately 100,000 light-years in diameter.</li>
+<li>Contains about 100–400 billion stars.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌠 Formation and Evolution</h4>
+<ul>
+<li>Formed about 13.6 billion years ago through the merging of gas clouds and smaller galaxies.</li>
+<li>Star formation continues in the spiral arms.</li>
+<li>Stars and gas orbit the galactic centre under the influence of gravity.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATIONS -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observations
+</div>
+<div class="card-body">
+
+<div class="obs-box">
+<h4>🌀 Galactic Motion</h4>
+<ul>
+<li>Gravity controls the movement of stars, gas, and other objects within the Milky Way.</li>
+<li>This gravitational interaction helps maintain the galaxy's spiral structure.</li>
+</ul>
+</div>
+
+<div class="obs-box">
+<h4>⭐ Star Formation</h4>
+<ul>
+<li>Occurs mainly in the spiral arms.</li>
+<li>Gas and dust clouds collapse under gravity to form new stars.</li>
+</ul>
+</div>
+
+<div class="obs-box">
+<h4>🕳️ Central Black Hole</h4>
+<ul>
+<li>Sagittarius A* exerts a strong gravitational influence on nearby stars and gas.</li>
+<li>Helps shape the motion of objects near the galactic centre.</li>
+</ul>
+</div>
+
+<div class="obs-box">
+<h4>🔭 Observational Evidence</h4>
+<ul>
+<li><strong>Optical Telescopes:</strong> Observe visible stars and star clusters.</li>
+<li><strong>Radio Telescopes:</strong> Detect gas clouds and radio emissions.</li>
+<li><strong>Infrared Telescopes:</strong> Observe regions hidden by dust.</li>
+<li><strong>Space Telescopes:</strong> Provide detailed observations beyond Earth's atmosphere.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li>Helps scientists understand galaxy formation and evolution.</li>
+<li>Supports the study of stellar life cycles.</li>
+<li>Improves knowledge of black holes and dark matter.</li>
+<li>Advances astronomical research and space exploration.</li>
+<li>Enhances understanding of the structure of the universe.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="milkyway_thumbnail.png">
+<source src="milkyway.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="milkyway1.jpg" alt="Image 1">
+<img src="milkyway2.jpg" alt="Image 2">
+<img src="milkyway3.jpg" alt="Image 3">
+<img src="milkyway4.jpg" alt="Image 4">
+<img src="milkyway5.jpg" alt="Image 5">
+<img src="milkyway6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
