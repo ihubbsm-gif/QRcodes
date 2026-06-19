@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earth</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.app-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ff7caf;
+}
+.app-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.app-box ul{
+padding-left:18px;
+margin:0;
+}
+.app-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>EARTH</h1>
+    <h2>(Our Home Planet)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IV onwards</p>
+<p><strong>Topic:</strong> Earth</p>
+<p><strong>Concepts:</strong> Earth's Layers, Atmosphere, Plate Tectonics, Rotation</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the physical characteristics and composition of Earth.</li>
+<li>Learn about Earth's rotational properties and its position in the Solar System.</li>
+<li>Explore Earth's major surface features and natural processes.</li>
+<li>Gain insights into the scientific and practical applications of studying Earth.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🌍 Physical Characteristics</h4>
+<ul>
+<li><strong>Layers:</strong> Earth consists of the inner core, outer core, mantle, and crust.</li>
+<li><strong>Atmosphere:</strong> Composed mainly of nitrogen (78%) and oxygen (21%), along with traces of other gases.</li>
+<li><strong>Hydrosphere:</strong> About 71% of Earth's surface is covered by oceans, rivers, lakes, glaciers, and ice caps.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🏔️ Surface Features</h4>
+<ul>
+<li><strong>Continents:</strong> Earth has seven major continents and large ocean basins.</li>
+<li><strong>Mountains:</strong> Includes major mountain ranges such as the Himalayas, Andes, and Rockies.</li>
+<li><strong>Plate Tectonics:</strong> Movement of tectonic plates causes earthquakes, volcanic activity, and mountain formation.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌀 Rotational Properties</h4>
+<ul>
+<li><strong>Rotation:</strong> Earth rotates counterclockwise on its axis.</li>
+<li><strong>Day and Night:</strong> One complete rotation takes approximately 24 hours, causing the cycle of day and night.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🔭 Discovery</h4>
+<ul>
+<li><strong>Early Knowledge:</strong> Ancient civilizations studied the Sun, Moon, stars, and seasons for navigation and calendar-making.</li>
+<li><strong>Scientific Revolution:</strong> Advances in astronomy, physics, and mathematics helped explain Earth's place in the Solar System.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>Observe Earth as the only known planet that supports life.</li>
+<li>Study the different layers of Earth using models and diagrams.</li>
+<li>Observe the distribution of land, water, mountains, and continents.</li>
+<li>Understand how Earth's rotation causes day and night.</li>
+<li>Examine satellite images showing Earth's atmosphere, oceans, and landforms.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Identify Earth's position in the Solar System.</li>
+<li>Observe a globe to locate continents, oceans, and major mountain ranges.</li>
+<li>Compare Earth's atmosphere with those of other planets.</li>
+<li>Observe how Earth rotates on its axis to create day and night.</li>
+<li>Explore satellite images to understand weather patterns and environmental changes.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="app-box">
+<h4>🛰️ Observation and Exploration</h4>
+<ul>
+<li><strong>Space Missions:</strong> Human missions and robotic satellites study Earth's atmosphere, climate, oceans, and geology from space.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>🔬 Scientific Applications</h4>
+<ul>
+<li><strong>Climate Studies:</strong> Helps understand climate change, weather patterns, and environmental variations.</li>
+<li><strong>Environmental Monitoring:</strong> Tracks deforestation, land-use changes, ocean temperatures, and ecosystem health.</li>
+<li><strong>Disaster Management:</strong> Supports early warning systems for earthquakes, hurricanes, tsunamis, floods, and volcanic eruptions.</li>
+<li><strong>Resource Management:</strong> Assists in agriculture, water conservation, and sustainable development.</li>
+<li><strong>Earth Sciences:</strong> Improves understanding of geological processes and the evolution of our planet.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="earth_thumbnail.png">
+<source src="earth.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="earth1.jpg" alt="Image 1">
+<img src="earth2.jpg" alt="Image 2">
+<img src="earth3.jpg" alt="Image 3">
+<img src="earth4.jpg" alt="Image 4">
+<img src="earth5.jpg" alt="Image 5">
+<img src="earth6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
