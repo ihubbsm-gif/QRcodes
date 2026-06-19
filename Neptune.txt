@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neptune</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>NEPTUNE</h1>
+    <h2>(The Farthest Planet from the Sun)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IV onwards</p>
+<p><strong>Topic:</strong> Neptune</p>
+<p><strong>Concepts:</strong> Ice Giants, Triton, Voyager 2 Mission</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Gain a thorough understanding of Neptune, including its physical characteristics, atmosphere, moons, and position in the Solar System.</li>
+<li>Learn about Neptune's discovery, exploration, and unique planetary features.</li>
+<li>Develop an appreciation for the scientific importance of studying distant planets.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🪐 Physical Characteristics</h4>
+<ul>
+<li><strong>Position:</strong> Neptune is the eighth and farthest planet from the Sun in the Solar System.</li>
+<li><strong>Size:</strong> It has a diameter of approximately 49,244 km, making it the fourth-largest planet by diameter.</li>
+<li><strong>Composition:</strong> Neptune has a rocky core surrounded by a thick mantle of water, ammonia, and methane ices.</li>
+<li><strong>Atmosphere:</strong> Composed mainly of hydrogen, helium, and methane. Methane gives Neptune its characteristic deep blue colour.</li>
+<li><strong>Weather:</strong> Neptune experiences the strongest winds in the Solar System, reaching speeds of up to 2,100 km/h.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌙 Moons and Rings</h4>
+<ul>
+<li><strong>Moons:</strong> Neptune has 14 known moons, with Triton being the largest.</li>
+<li><strong>Triton:</strong> Unique because it revolves around Neptune in the direction opposite to the planet's rotation (retrograde orbit).</li>
+<li><strong>Rings:</strong> Neptune possesses a faint ring system made of dust particles and ice.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🔭 Discovery</h4>
+<ul>
+<li><strong>Discovery:</strong> Neptune was discovered in 1846 by Johann Galle and Heinrich d'Arrest, based on mathematical predictions made by Urbain Le Verrier and John Couch Adams.</li>
+<li><strong>Significance:</strong> It was the first planet discovered through mathematical calculations before being directly observed.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- OBSERVATION & EXPLORATION -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Observation and Exploration
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Voyager 2 Mission (1989):</strong> The only spacecraft to fly past Neptune, providing the first close-up images and valuable scientific data.</li>
+<li><strong>Modern Observations:</strong> Space-based and ground-based telescopes, including the Hubble Space Telescope, continue to study Neptune's atmosphere, storms, and climate.</li>
+</ul>
+</div>
+</div>
+
+<!-- INTERESTING FACT -->
+<div class="card teal">
+<div class="card-header">
+<i class="fas fa-gem"></i>
+Interesting Fact
+</div>
+<div class="card-body">
+<ul>
+<li>Scientists believe that diamond rain may occur deep inside Neptune. Under extreme pressure and temperature, carbon atoms may compress into diamond crystals that fall through the planet's interior.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li>Helps scientists understand the formation and evolution of the Solar System.</li>
+<li>Provides insights into planetary atmospheres, weather systems, and climate dynamics.</li>
+<li>Contributes to the study of magnetic fields, radiation environments, and spacecraft design for future deep-space missions.</li>
+<li>Enhances our understanding of ice giant planets and their similarities and differences with Uranus.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="neptune_thumbnail.png">
+<source src="neptune.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="neptune1.jpg" alt="Image 1">
+<img src="neptune2.jpg" alt="Image 2">
+<img src="neptune3.jpg" alt="Image 3">
+<img src="neptune4.jpg" alt="Image 4">
+<img src="neptune5.jpg" alt="Image 5">
+<img src="neptune6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
