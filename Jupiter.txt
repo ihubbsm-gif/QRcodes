@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jupiter</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.app-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ff7caf;
+}
+.app-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.app-box ul{
+padding-left:18px;
+margin:0;
+}
+.app-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>JUPITER</h1>
+    <h2>(The Largest Planet in the Solar System)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IV onwards</p>
+<p><strong>Topic:</strong> Jupiter</p>
+<p><strong>Concepts:</strong> Gas Giants, Great Red Spot, Galilean Moons</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the physical characteristics and composition of Jupiter.</li>
+<li>Learn about Jupiter's rotational and orbital properties.</li>
+<li>Explore the history of Jupiter's discovery and observation.</li>
+<li>Gain insights into the scientific importance of studying Jupiter and its moons.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🌪️ Physical Characteristics</h4>
+<ul>
+<li><strong>Gas Giant:</strong> Jupiter is mainly composed of hydrogen (about 75%) and helium (about 24%), with traces of methane, ammonia, and water vapour.</li>
+<li><strong>Atmosphere:</strong> Features colourful cloud bands and the Great Red Spot, a giant storm larger than Earth that has existed for over 350 years.</li>
+<li><strong>Interior Structure:</strong> Believed to have a dense rocky core surrounded by metallic hydrogen and a thick gaseous envelope.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌀 Rotational and Orbital Properties</h4>
+<ul>
+<li><strong>Rotation:</strong> Jupiter rotates very rapidly, completing one rotation in approximately 9.9 hours.</li>
+<li><strong>Orbital Period:</strong> Revolves around the Sun at an average distance of about 778 million km, taking approximately 11.9 Earth years to complete one orbit.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🔭 Discovery</h4>
+<ul>
+<li><strong>Ancient Knowledge:</strong> Known to ancient civilizations and easily visible in the night sky.</li>
+<li><strong>Telescopic Observations:</strong> In 1610, Galileo Galilei discovered Jupiter's four largest moons, now known as the Galilean Moons.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>Observe Jupiter as the largest planet in the Solar System.</li>
+<li>Study its colourful cloud bands and the Great Red Spot.</li>
+<li>Compare Jupiter's rapid rotation with that of other planets.</li>
+<li>Observe images of its major moons and their unique features.</li>
+<li>Examine data collected by spacecraft studying Jupiter.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Identify Jupiter in the Solar System model.</li>
+<li>Observe the Great Red Spot and discuss its significance.</li>
+<li>Compare Jupiter's size with Earth and other planets.</li>
+<li>Observe the Galilean Moons: Io, Europa, Ganymede, and Callisto.</li>
+<li>Discuss why Jupiter is classified as a gas giant.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="app-box">
+<h4>🛰️ Observation and Exploration</h4>
+<ul>
+<li><strong>Juno Mission (2011–Present):</strong> Studies Jupiter's atmosphere, magnetic field, gravity, and internal structure.</li>
+<li><strong>Galilean Moons:</strong> Provide valuable information about planetary evolution and the possibility of life beyond Earth.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>🔬 Scientific Applications</h4>
+<ul>
+<li>Helps scientists understand the formation and evolution of giant planets.</li>
+<li>Supports research on planetary atmospheres and internal structures.</li>
+<li>Provides insights into magnetic fields and space weather.</li>
+<li>Helps study radiation belts and their effects on spacecraft.</li>
+<li>Advances our understanding of the Solar System and planetary science.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="jupiter_thumbnail.png">
+<source src="jupiter.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="jupiter1.jpg" alt="Image 1">
+<img src="jupiter2.jpg" alt="Image 2">
+<img src="jupiter3.jpg" alt="Image 3">
+<img src="jupiter4.jpg" alt="Image 4">
+<img src="jupiter5.jpg" alt="Image 5">
+<img src="jupiter6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
