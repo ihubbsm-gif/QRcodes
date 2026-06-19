@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercury</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.app-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ff7caf;
+}
+.app-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.app-box ul{
+padding-left:18px;
+margin:0;
+}
+.app-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>MERCURY</h1>
+    <h2>(The Closest Planet to the Sun)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IV onwards</p>
+<p><strong>Topic:</strong> Mercury</p>
+<p><strong>Concepts:</strong> Planetary Science, Orbit & Rotation, Spacecraft Exploration</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the physical characteristics and composition of Mercury.</li>
+<li>Learn about Mercury's orbit, rotation, and unique environmental conditions.</li>
+<li>Explore the history of Mercury's discovery and observation.</li>
+<li>Appreciate the scientific importance of studying Mercury and its role in understanding the Solar System.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🪐 Physical Characteristics</h4>
+<ul>
+<li><strong>Surface:</strong> Covered with numerous impact craters due to the absence of a significant atmosphere.</li>
+<li><strong>Density:</strong> One of the densest planets in the Solar System, indicating a large metallic core.</li>
+<li><strong>Temperature:</strong> Experiences extreme temperature variations, ranging from -173°C at night to 427°C during the day.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌀 Orbital and Rotational Properties</h4>
+<ul>
+<li><strong>Orbit:</strong> Closest planet to the Sun, with an elliptical orbit varying between 46 million km and 70 million km from the Sun.</li>
+<li><strong>Rotation:</strong> Exhibits a 3:2 spin-orbit resonance, rotating three times for every two revolutions around the Sun.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🔭 Discovery</h4>
+<ul>
+<li>Known to ancient civilizations because it is visible to the naked eye.</li>
+<li>Early telescopic observations by Galileo Galilei provided more detailed information about the planet.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>Observe Mercury's position as the closest planet to the Sun in the Solar System model.</li>
+<li>Notice its heavily cratered surface, similar to Earth's Moon.</li>
+<li>Compare Mercury's extreme day and night temperatures caused by its thin atmosphere.</li>
+<li>Study its unique rotational pattern and orbital movement around the Sun.</li>
+<li>Examine images and data collected by Mercury exploration missions.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Identify Mercury in the Solar System model.</li>
+<li>Observe the crater-filled surface and discuss how impact craters are formed.</li>
+<li>Compare Mercury's size and characteristics with other terrestrial planets.</li>
+<li>Analyze why Mercury experiences such large temperature variations.</li>
+<li>Explore how scientists gather information about Mercury through spacecraft missions.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="app-box">
+<h4>🛰️ Observation and Exploration</h4>
+<ul>
+<li><strong>Mariner 10 (1970s):</strong> First spacecraft to visit Mercury and provide close-up images and scientific data.</li>
+<li><strong>MESSENGER Mission (2004–2015):</strong> Mapped Mercury's surface, studied its composition, magnetic field, and geological history.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>🔬 Scientific Applications</h4>
+<ul>
+<li>Helps scientists understand the formation and evolution of terrestrial planets.</li>
+<li>Provides insights into planetary magnetic fields and atmospheric processes.</li>
+<li>Assists in studying the effects of solar radiation and solar winds on planets.</li>
+<li>Enhances knowledge of planetary geology and space weather.</li>
+<li>Supports future planetary exploration and research missions.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="mercury_thumbnail.png">
+<source src="mercury.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="mercury1.jpg" alt="Image 1">
+<img src="mercury2.jpg" alt="Image 2">
+<img src="mercury3.jpg" alt="Image 3">
+<img src="mercury4.jpg" alt="Image 4">
+<img src="mercury5.jpg" alt="Image 5">
+<img src="mercury6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
