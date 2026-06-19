@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mars</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.app-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ff7caf;
+}
+.app-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.app-box ul{
+padding-left:18px;
+margin:0;
+}
+.app-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>MARS</h1>
+    <h2>(The Red Planet)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IV onwards</p>
+<p><strong>Topic:</strong> Mars</p>
+<p><strong>Concepts:</strong> Martian Geology, Atmosphere, Rovers & Exploration</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the physical characteristics and geological features of Mars.</li>
+<li>Learn about Mars's rotation and orbit around the Sun.</li>
+<li>Explore the history of Mars's discovery and observation.</li>
+<li>Gain insights into scientific research and future exploration of Mars.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🌋 Physical Characteristics</h4>
+<ul>
+<li><strong>Volcanoes:</strong> Home to Olympus Mons, the largest volcano in the Solar System.</li>
+<li><strong>Valleys:</strong> Features Valles Marineris, one of the largest canyon systems known.</li>
+<li><strong>Impact Craters:</strong> Numerous craters indicate past collisions with asteroids and comets.</li>
+<li><strong>Atmosphere:</strong> Composed mainly of carbon dioxide, with traces of nitrogen and argon.</li>
+<li><strong>Temperature:</strong> Thin atmosphere with an average temperature of about -60°C.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌀 Rotational and Orbital Properties</h4>
+<ul>
+<li><strong>Rotation:</strong> Mars completes one rotation in approximately 24.6 hours (one Martian day or sol).</li>
+<li><strong>Day and Night:</strong> Rotation causes regular cycles of day and night, similar to Earth.</li>
+<li><strong>Orbit:</strong> Mars revolves around the Sun beyond Earth's orbit.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🔭 Discovery</h4>
+<ul>
+<li><strong>Ancient Observations:</strong> Known since ancient times due to its reddish appearance in the night sky.</li>
+<li><strong>Telescopic Observations:</strong> Early astronomers, including Galileo Galilei, studied Mars and observed its surface features.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>Observe Mars as the "Red Planet" due to iron-rich dust on its surface.</li>
+<li>Study models and images showing volcanoes, valleys, and impact craters.</li>
+<li>Compare the Martian day with Earth's day.</li>
+<li>Examine the thin atmosphere and cold environmental conditions.</li>
+<li>Analyze images and data collected from orbiters and rovers.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Identify Mars in the Solar System model.</li>
+<li>Observe the surface features such as Olympus Mons and Valles Marineris.</li>
+<li>Compare Mars's atmosphere and temperature with Earth's.</li>
+<li>Discuss evidence suggesting the presence of water in Mars's past.</li>
+<li>Explore rover images showing the Martian landscape.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="app-box">
+<h4>🛰️ Observation and Exploration</h4>
+<ul>
+<li><strong>Space Missions:</strong> Numerous orbiters, landers, and rovers have explored Mars.</li>
+<li><strong>Mars Rovers:</strong> Spirit, Opportunity, Curiosity, and Perseverance have studied Martian rocks, soil, and atmosphere.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>🔬 Scientific Applications</h4>
+<ul>
+<li>Helps scientists study planetary geology and climate evolution.</li>
+<li>Supports research on the possibility of past or present life on Mars.</li>
+<li>Provides insights into the habitability of other planets.</li>
+<li>Comparison with Earth and Venus improves understanding of planetary evolution.</li>
+<li>Assists in planning future human exploration and settlement missions.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="mars_thumbnail.png">
+<source src="mars.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="mars1.jpg" alt="Image 1">
+<img src="mars2.jpg" alt="Image 2">
+<img src="mars3.jpg" alt="Image 3">
+<img src="mars4.jpg" alt="Image 4">
+<img src="mars5.jpg" alt="Image 5">
+<img src="mars6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
