@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venus</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.app-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ff7caf;
+}
+.app-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.app-box ul{
+padding-left:18px;
+margin:0;
+}
+.app-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>VENUS</h1>
+    <h2>(The Hottest Planet in the Solar System)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IV onwards</p>
+<p><strong>Topic:</strong> Venus</p>
+<p><strong>Concepts:</strong> Planetary Atmosphere, Retrograde Rotation, Phases of Venus</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the physical characteristics and unique features of Venus.</li>
+<li>Learn about the rotational properties and atmospheric conditions of Venus.</li>
+<li>Explore the phases of Venus and their significance.</li>
+<li>Appreciate the history of Venus's discovery and exploration.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>🌋 Physical Characteristics</h4>
+<ul>
+<li><strong>Atmosphere Composition:</strong> Predominantly carbon dioxide (CO₂) with thick clouds of sulfuric acid.</li>
+<li><strong>Pressure and Temperature:</strong> Surface pressure is about 92 times that of Earth, with average temperatures around 462°C.</li>
+<li><strong>Volcanoes:</strong> Contains extensive volcanic plains and shield volcanoes, including Maxwell Montes, the highest peak on Venus.</li>
+<li><strong>Impact Craters:</strong> Relatively few impact craters due to volcanic resurfacing.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌀 Orbital and Rotational Properties</h4>
+<ul>
+<li><strong>Retrograde Rotation:</strong> Rotates clockwise, opposite to most planets in the Solar System.</li>
+<li><strong>Day and Year:</strong> One Venusian day lasts about 243 Earth days, while one Venusian year lasts about 225 Earth days.</li>
+<li><strong>Synodic Period:</strong> Takes approximately 584 Earth days to return to the same position relative to Earth and the Sun.</li>
+<li><strong>Phases of Venus:</strong> Exhibits phases similar to the Moon as viewed from Earth.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🔭 Discovery</h4>
+<ul>
+<li>Known since ancient times because of its brightness in the sky.</li>
+<li>Named after the Roman goddess of love and beauty.</li>
+<li>Early telescopic observations revealed its phases and dense atmosphere.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING & OBSERVATION -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-eye"></i>
+Working and Observation
+</div>
+<div class="card-body">
+<ul>
+<li>Observe Venus as the brightest planet visible from Earth.</li>
+<li>Study its thick atmosphere and volcanic surface through models and images.</li>
+<li>Observe the changing phases of Venus using telescope images.</li>
+<li>Compare the length of a Venusian day and year.</li>
+<li>Analyze how its retrograde rotation differs from other planets.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Identify Venus in the Solar System model.</li>
+<li>Observe images showing its dense cloud cover.</li>
+<li>Compare Venus's atmosphere and temperature with Earth's.</li>
+<li>Observe the different phases of Venus and discuss why they occur.</li>
+<li>Explore how Venus appears as the Morning Star or Evening Star.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="app-box">
+<h4>🛰️ Observation and Exploration</h4>
+<ul>
+<li><strong>Telescopic Views:</strong> Help observe the phases of Venus.</li>
+<li><strong>Inferior Conjunction:</strong> Venus passes between Earth and the Sun, though usually hidden by solar glare.</li>
+<li><strong>Venera Program (1960s–1980s):</strong> First missions to successfully land on Venus and transmit surface data.</li>
+<li><strong>Magellan Mission (1989–1994):</strong> Mapped Venus's surface using radar and revealed volcanic features.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>🔬 Scientific Applications</h4>
+<ul>
+<li>Study of Venus's dense atmosphere and greenhouse effect improves climate science.</li>
+<li>Analysis of volcanic features provides insights into planetary geology.</li>
+<li>Comparison with Earth and Mars helps understand planetary evolution and habitability.</li>
+<li>Supports research on atmospheric dynamics and extreme planetary environments.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="venus_thumbnail.png">
+<source src="venus.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="venus1.jpg" alt="Image 1">
+<img src="venus2.jpg" alt="Image 2">
+<img src="venus3.jpg" alt="Image 3">
+<img src="venus4.jpg" alt="Image 4">
+<img src="venus5.jpg" alt="Image 5">
+<img src="venus6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
