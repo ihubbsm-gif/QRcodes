@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cotton Plant / Cotton Mill</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.app-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ff7caf;
+}
+.app-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.app-box ul{
+padding-left:18px;
+margin:0;
+}
+.app-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>COTTON PLANT / COTTON MILL</h1>
+    <h2>(From Cultivation to Textile Industry)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> 7 & 8</p>
+<p><strong>Related Chapters:</strong></p>
+<ul>
+<li>Class 7 – A Shirt in the Market</li>
+<li>Class 8 – Agriculture</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the history and origin of cotton.</li>
+<li>Learn about the structure and life cycle of the cotton plant.</li>
+<li>Understand the efforts and processes involved in cotton cultivation.</li>
+<li>Explore the role of farmers, markets, and the putting-out system in cotton production.</li>
+<li>Recognize the importance of cotton in daily life and the textile industry.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES (Participate & Observe) -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Explain the life cycle, cultivation, and harvesting of cotton.</li>
+<li>Describe the journey of cotton from plant to finished products such as shirts.</li>
+<li>Understand the role of farmers, markets, and textile mills in cotton production.</li>
+<li>Evaluate the environmental and social impacts of cotton cultivation.</li>
+<li>Appreciate the economic importance of cotton in trade and daily life.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="app-box">
+<h4>🌾 1. Agriculture & Industry</h4>
+<ul>
+<li>Cotton is an important cash crop used in textile manufacturing.</li>
+<li>Supports farmers, textile mills, and related industries.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>👕 2. Everyday Life</h4>
+<ul>
+<li>Used in clothing and fabrics.</li>
+<li>Used in medical products such as cotton balls and swabs.</li>
+<li>Used in personal care products like cotton buds.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>💰 3. Economic Importance</h4>
+<ul>
+<li>Contributes significantly to trade and employment.</li>
+<li>Supports local and global textile markets.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="cottonmill_thumbnail.png">
+<source src="cottonmill.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="cottonmill1.jpg" alt="Image 1">
+<img src="cottonmill2.jpg" alt="Image 2">
+<img src="cottonmill3.jpg" alt="Image 3">
+<img src="cottonmill4.jpg" alt="Image 4">
+<img src="cottonmill5.jpg" alt="Image 5">
+<img src="cottonmill6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
