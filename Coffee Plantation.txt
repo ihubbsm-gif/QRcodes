@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Plantation</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.sub-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #5aa9ff;
+}
+.sub-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.sub-box ul{
+padding-left:18px;
+margin:0;
+}
+.sub-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>COFFEE PLANTATION</h1>
+    <h2>(Cultivation, Geography & Economic Importance)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> 8</p>
+<p><strong>Related Chapter:</strong> Class 8 – Agriculture</p>
+</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the biological and ecological requirements for coffee cultivation.</li>
+<li>Learn about the major species of coffee plants, especially Arabica and Robusta.</li>
+<li>Identify major coffee-producing regions in India and the world.</li>
+<li>Understand the climatic and soil conditions required for coffee growth.</li>
+</ul>
+</div>
+</div>
+
+<!-- KEY CONCEPTS (Science Involved) -->
+<div class="card blue full-width">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Key Concepts
+</div>
+<div class="card-body">
+
+<div class="sub-box">
+<h4>☕ Coffee Cultivation</h4>
+<ul>
+<li>Coffee is a plantation crop grown mainly in tropical and subtropical regions.</li>
+<li>The two most common species are Arabica and Robusta.</li>
+<li>Coffee requires moderate temperature, adequate rainfall, and well-drained fertile soil.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌍 Geographical Importance</h4>
+<ul>
+<li>Major coffee-producing countries include Brazil, Vietnam, Colombia, and India.</li>
+<li>In India, coffee is mainly grown in Karnataka, Kerala, and Tamil Nadu.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>💰 Economic Importance</h4>
+<ul>
+<li>Coffee is an important commercial crop and export commodity.</li>
+<li>It provides employment in farming, processing, transportation, and trade.</li>
+<li>Coffee contributes significantly to national and international trade.</li>
+</ul>
+</div>
+
+<div class="sub-box">
+<h4>🌱 Environmental Impact</h4>
+<ul>
+<li>Sustainable coffee farming helps conserve soil and biodiversity.</li>
+<li>Unsustainable practices may lead to deforestation, soil erosion, and habitat loss.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES (Participate & Observe) -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Explain the requirements for coffee cultivation.</li>
+<li>Differentiate between Arabica and Robusta coffee.</li>
+<li>Identify major coffee-growing regions.</li>
+<li>Understand the economic importance of coffee production.</li>
+<li>Recognize the environmental impacts of coffee cultivation and the need for sustainable farming practices.</li>
+</ul>
+</div>
+</div>
+
+<!-- REAL-LIFE RELEVANCE (Applications) -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Real-Life Relevance
+</div>
+<div class="card-body">
+<ul>
+<li>Supports livelihoods of farmers and plantation workers.</li>
+<li>Contributes to export earnings and economic growth.</li>
+<li>Promotes awareness of sustainable agricultural practices.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="coffeeplantation_thumbnail.png">
+<source src="coffeeplantation.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="coffeeplantation1.jpg" alt="Image 1">
+<img src="coffeeplantation2.jpg" alt="Image 2">
+<img src="coffeeplantation3.jpg" alt="Image 3">
+<img src="coffeeplantation4.jpg" alt="Image 4">
+<img src="coffeeplantation5.jpg" alt="Image 5">
+<img src="coffeeplantation6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
