@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minerals</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.app-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ff7caf;
+}
+.app-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.app-box ul{
+padding-left:18px;
+margin:0;
+}
+.app-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>MINERALS</h1>
+    <h2>(Uses, Sustainability & Daily Life)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> 7</p>
+<p><strong>Chapter:</strong> Rocks</p>
+</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the importance and uses of minerals in daily life.</li>
+<li>Learn how minerals are used in construction, healthcare, and industries.</li>
+<li>Discuss the environmental and ethical issues related to mining.</li>
+<li>Develop awareness about sustainable use of natural resources.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Identify common minerals and their uses in everyday life.</li>
+<li>Explain the role of minerals in construction, healthcare, and industries.</li>
+<li>Recognize the environmental impacts of mining and the need for sustainable practices.</li>
+<li>Appreciate the importance of minerals as valuable natural resources.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+
+<div class="app-box">
+<h4>🏗️ 1. Construction</h4>
+<ul>
+<li>Minerals such as limestone, gypsum, and quartz are used in building materials.</li>
+<li>Essential for making cement, glass, ceramics, and concrete.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>🏥 2. Healthcare</h4>
+<ul>
+<li>Minerals are used in medical equipment and pharmaceutical products.</li>
+<li>Minerals like calcium, magnesium, and zinc are important for human health and body functions.</li>
+</ul>
+</div>
+
+<div class="app-box">
+<h4>🏭 3. Industries</h4>
+<ul>
+<li>Minerals are widely used in manufacturing, electronics, transportation, and energy production.</li>
+<li>They are important raw materials for many everyday products.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="minerals_thumbnail.png">
+<source src="minerals.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="minerals1.jpg" alt="Image 1">
+<img src="minerals2.jpg" alt="Image 2">
+<img src="minerals3.jpg" alt="Image 3">
+<img src="minerals4.jpg" alt="Image 4">
+<img src="minerals5.jpg" alt="Image 5">
+<img src="minerals6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
