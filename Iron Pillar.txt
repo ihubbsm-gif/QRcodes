@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Pillar</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>IRON PILLAR</h1>
+    <h2>(Ancient Indian Metallurgy & Heritage)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> 6 & 7</p>
+<p><strong>Related Chapters:</strong></p>
+<ul>
+<li>Class 7: Buildings, Paintings and Books</li>
+<li>Class 7: Rulers and Buildings</li>
+<li>Class 6: What, Where, How and When</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the ancient Indian craftsmanship of Gupta-age artisans.</li>
+<li>Learn about ancient metallurgy and its historical significance.</li>
+<li>Appreciate the Iron Pillar as an important part of India's cultural heritage.</li>
+<li>Understand its relevance in the modern world.</li>
+</ul>
+</div>
+</div>
+
+<!-- KEY FEATURES (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Key Features (Science Involved)
+</div>
+<div class="card-body">
+<ul>
+<li>Built during the Gupta period.</li>
+<li>Famous for its resistance to rust and corrosion.</li>
+<li>Demonstrates the advanced metallurgical knowledge of ancient India.</li>
+<li>Represents the artistic and engineering excellence of the time.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES (Participate & Observe) -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Students will explain the glory and achievements of the Gupta period.</li>
+<li>Students will describe the importance of the Iron Pillar in Indian history.</li>
+<li>Students will relate its properties to modern engineering and construction.</li>
+</ul>
+</div>
+</div>
+
+<!-- MODERN APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Modern Applications
+</div>
+<div class="card-body">
+<ul>
+<li>Development of corrosion-resistant construction materials.</li>
+<li>Understanding the role of alloying elements in metallurgy.</li>
+<li>Inspiration for durable and sustainable infrastructure.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="ironpillar_thumbnail.png">
+<source src="ironpillar.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="ironpillar1.jpg" alt="Image 1">
+<img src="ironpillar2.jpg" alt="Image 2">
+<img src="ironpillar3.jpg" alt="Image 3">
+<img src="ironpillar4.jpg" alt="Image 4">
+<img src="ironpillar5.jpg" alt="Image 5">
+<img src="ironpillar6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
