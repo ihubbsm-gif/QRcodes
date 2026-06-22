@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2D to 3D Image</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>2D TO 3D IMAGE</h1>
+    <h2>(Visual Perception & Persistence of Vision)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VI, VII & VIII</p>
+<p><strong>Subject:</strong> Science</p>
+<p><strong>Concepts:</strong> Motion Perception, Depth Perception, Persistence of Vision</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Understand how visual illusions create a perception of depth in a two-dimensional image.</li>
+<li>Analyze the mechanisms that trick the brain into seeing three-dimensional objects.</li>
+<li>Explore the concepts of motion perception, depth perception, and persistence of vision.</li>
+<li>Relate these concepts to real-world applications in science and technology.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+<ul>
+<li>The illusion of a fast-rotating 2D circle or triangle appearing as a 3D sphere or pyramid is based on our perception of motion and shape.</li>
+<li>The brain uses motion and visual cues to create a sense of depth.</li>
+<li>This demonstrates how the human visual system constructs three-dimensional images from limited sensory information.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>A two-dimensional object such as a circle or triangle is rotated rapidly.</li>
+<li>The eyes receive a series of continuously changing images.</li>
+<li>Due to persistence of vision, these images blend together and appear continuous.</li>
+<li>The brain combines the motion with its understanding of depth and form.</li>
+<li>The flat object appears to gain depth and volume, resembling a three-dimensional shape such as a sphere or pyramid.</li>
+<li>This illusion shows how the brain interprets visual information to construct reality.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Observe the appearance of the object before and during rotation.</li>
+<li>Notice how a flat 2D shape appears to transform into a 3D object.</li>
+<li>Compare the visual effect at different rotation speeds.</li>
+<li>Identify the motion cues that create the illusion of depth.</li>
+<li>Discuss why the brain perceives the rotating object as three-dimensional.</li>
+<li>Record and compare observations with classmates.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li>Used by scientists to create three-dimensional models from two-dimensional data.</li>
+<li>Helps in scientific research, analysis, and visualization.</li>
+<li>Used in computer graphics, animation, and visual effects.</li>
+<li>Enhances the immersive experience in movies and video games.</li>
+<li>Applied in virtual reality, simulations, and educational models.</li>
+<li>Helps researchers study human visual perception and brain processing.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="2dto3dimage_thumbnail.png">
+<source src="2dto3dimage.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="2dto3dimage1.jpg" alt="Image 1">
+<img src="2dto3dimage2.jpg" alt="Image 2">
+<img src="2dto3dimage3.jpg" alt="Image 3">
+<img src="2dto3dimage4.jpg" alt="Image 4">
+<img src="2dto3dimage5.jpg" alt="Image 5">
+<img src="2dto3dimage6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
