@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archimedes Screw</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>ARCHIMEDES SCREW</h1>
+    <h2>(Fluid Dynamics & Ancient Engineering)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VIII & IX</p>
+<p><strong>Topic:</strong> Archimedes Screw</p>
+<p><strong>Concepts:</strong> Fluid Dynamics, Rotational Motion, Gravity</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li>Learn about the design and function of the Archimedes Screw for lifting water.</li>
+<li>Understand the principle of fluid dynamics involved in its operation.</li>
+<li>Examine its historical significance and applications in modern engineering.</li>
+<li>Appreciate how simple mechanical devices can solve practical problems.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE EXPLAINED -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Explained
+</div>
+<div class="card-body">
+<ul>
+<li>The Archimedes Screw is a classic example of ancient engineering ingenuity.</li>
+<li>It demonstrates how simple yet effective mechanisms can be used to lift and transfer water.</li>
+<li>The device operates on the principles of fluid dynamics and gravity.</li>
+<li>It remains an important example of how scientific principles can be applied to solve real-world problems.</li>
+</ul>
+</div>
+</div>
+
+<!-- PRINCIPLE -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Principle
+</div>
+<div class="card-body">
+<ul>
+<li>The fundamental principle behind the Archimedes Screw is the conversion of rotational motion into linear motion.</li>
+<li>A helical screw rotates inside a cylindrical casing.</li>
+<li>As the screw rotates, water becomes trapped within the spiraling grooves.</li>
+<li>The trapped water is carried upward against gravity.</li>
+<li>This mechanism enables water to be lifted from a lower level to a higher level efficiently.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-water"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>The lower end of the screw is placed in water.</li>
+<li>When the screw is rotated, water enters the lower end of the device.</li>
+<li>The helical blades trap the water within their grooves.</li>
+<li>Continuous rotation moves the trapped water upward along the length of the screw.</li>
+<li>The water is eventually discharged at a higher elevation.</li>
+<li>Gravity plays an important role, as the weight of the water helps maintain its movement within the screw.</li>
+<li>The continuous rotation of the screw ensures a steady and reliable flow of water.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Rotate the Archimedes Screw and observe the movement of water.</li>
+<li>Notice how water enters through the lower end and moves upward.</li>
+<li>Observe the role of the helical blades in lifting water.</li>
+<li>Compare the water level before and after operation.</li>
+<li>Identify how rotational motion is converted into upward movement.</li>
+<li>Discuss why the device is effective for lifting water without pumps.</li>
+<li>Relate the observations to the principles of fluid dynamics and gravity.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li>In ancient times, the Archimedes Screw was widely used for irrigation.</li>
+<li>It helped transport water from rivers and streams to agricultural fields.</li>
+<li>Modern versions are used in agricultural irrigation systems, wastewater treatment plants, drainage systems, hydroelectric power generation, and water transfer and flood control projects.</li>
+<li>The device demonstrates the practical application of mechanical engineering and fluid dynamics.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="archimedesscrew_thumbnail.png">
+<source src="archimedesscrew.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="archimedesscrew1.jpg" alt="Image 1">
+<img src="archimedesscrew2.jpg" alt="Image 2">
+<img src="archimedesscrew3.jpg" alt="Image 3">
+<img src="archimedesscrew4.jpg" alt="Image 4">
+<img src="archimedesscrew5.jpg" alt="Image 5">
+<img src="archimedesscrew6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
