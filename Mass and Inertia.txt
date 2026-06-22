@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass and Inertia</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>MASS AND INERTIA</h1>
+    <h2>(Momentum, Gravity & Energy Conversion)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IX & XI</p>
+<p><strong>Subject:</strong> Science</p>
+<p><strong>Concepts:</strong> Mass, Inertia, Momentum, Energy Conservation</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcome
+</div>
+<div class="card-body">
+<ul>
+<li>Learn about the relationship between mass and inertia.</li>
+<li>Examine how these concepts influence an object's resistance to changes in its state of motion.</li>
+<li>Understand the role of gravitational force and energy conversion in motion.</li>
+<li>Observe how momentum affects the movement of an object.</li>
+</ul>
+</div>
+</div>
+
+<!-- PRINCIPLE (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Principle
+</div>
+<div class="card-body">
+<ul>
+<li>The principle behind the motion of a circular wooden block hanging by ropes involves the interplay of mass, inertia, and gravitational force.</li>
+<li>Every object possesses inertia, which is the tendency to resist changes in its state of motion.</li>
+<li>The mass of an object determines the amount of inertia it possesses.</li>
+<li>Gravity acts on the suspended block, influencing its motion.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>A circular wooden block is suspended using ropes.</li>
+<li>When the block is hanging, it experiences the force of gravity pulling it downward.</li>
+<li>Due to its mass and the gravitational force acting upon it, the block possesses potential energy.</li>
+<li>When released, the potential energy is converted into kinetic energy as the block moves downward.</li>
+<li>As the block descends, inertia keeps it moving.</li>
+<li>At its lowest point, most of the potential energy has been converted into kinetic energy.</li>
+<li>The momentum gained during descent allows the block to move upward on the opposite side.</li>
+<li>Gravity gradually slows the upward motion.</li>
+<li>The block momentarily stops at its highest point before reversing direction and repeating the motion.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Pull the wooden block to one side and release it.</li>
+<li>Observe the downward and upward movement of the block.</li>
+<li>Identify the lowest and highest points of motion.</li>
+<li>Notice how the block continues moving due to inertia.</li>
+<li>Observe the conversion of potential energy into kinetic energy and back again.</li>
+<li>Compare the motion with your understanding of gravity and momentum.</li>
+<li>Discuss how mass affects the motion of the suspended block.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Application
+</div>
+<div class="card-body">
+<ul>
+<li>Demonstrates the principles of mass and inertia, gravitational force, conservation of energy, and momentum.</li>
+<li>Used in educational settings to explain fundamental concepts of classical mechanics.</li>
+<li>Provides a practical demonstration of abstract physics principles.</li>
+<li>Serves as a foundation for understanding more complex systems such as pendulums, oscillatory motion, and rotational motion.</li>
+<li>Helps students develop observation, analysis, and critical-thinking skills in physics.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="massandinertia_thumbnail.png">
+<source src="massandinertia.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="massandinertia1.jpg" alt="Image 1">
+<img src="massandinertia2.jpg" alt="Image 2">
+<img src="massandinertia3.jpg" alt="Image 3">
+<img src="massandinertia4.jpg" alt="Image 4">
+<img src="massandinertia5.jpg" alt="Image 5">
+<img src="massandinertia6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
