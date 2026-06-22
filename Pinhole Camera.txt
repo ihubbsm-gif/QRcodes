@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinhole Camera</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>PINHOLE CAMERA</h1>
+    <h2>(Light, Optics & Image Formation)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VI</p>
+<p><strong>Topic:</strong> Pinhole Camera (Camera Obscura)</p>
+<p><strong>Concepts:</strong> Light, Optics, Image Formation</p>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcome
+</div>
+<div class="card-body">
+<ul>
+<li>Explore the basic principles of how a pinhole camera works.</li>
+<li>Understand the relationship between aperture size, image formation, and exposure time.</li>
+<li>Learn how light travels and forms images.</li>
+<li>Appreciate the connection between science, optics, and photography.</li>
+</ul>
+</div>
+</div>
+
+<!-- PRINCIPLE (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Principle
+</div>
+<div class="card-body">
+<ul>
+<li>The pinhole camera, also known as a Camera Obscura, is one of the simplest applications of optical principles.</li>
+<li>It works on the principles of geometry and light.</li>
+<li>Light travels in straight lines.</li>
+<li>When light passes through a very small hole (aperture), it forms an image on the opposite surface.</li>
+<li>The image formed is inverted (upside down).</li>
+<li>The size of the aperture affects the clarity and brightness of the image.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>Light from an object enters through a tiny aperture.</li>
+<li>The light rays pass through the small hole and project an inverted image on the opposite side of the camera.</li>
+<li>Unlike modern cameras, a pinhole camera does not use lenses.</li>
+<li>It relies entirely on the straight-line travel of light to form an image.</li>
+<li>Smaller apertures produce sharper images but require longer exposure times.</li>
+<li>Larger apertures allow more light to enter but may reduce image sharpness.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Observe the image formed inside the pinhole camera.</li>
+<li>Notice that the image appears inverted.</li>
+<li>Compare images formed using different aperture sizes.</li>
+<li>Observe the effect of aperture size on image brightness and sharpness.</li>
+<li>Identify how exposure time changes with different aperture sizes.</li>
+<li>Relate your observations to the straight-line travel of light.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Application
+</div>
+<div class="card-body">
+<ul>
+<li>One of the earliest image-recording devices in the history of photography.</li>
+<li>Helps students understand the basic principles of light and optics.</li>
+<li>Used for educational demonstrations and scientific experiments.</li>
+<li>Allows photographers and enthusiasts to explore fundamental photography techniques.</li>
+<li>Creates unique vintage-style images without the use of lenses.</li>
+<li>Demonstrates the enduring connection between Science and Art.</li>
+<li>Serves as a practical tool for learning about image formation and optical systems.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="pinholecamera_thumbnail.png">
+<source src="pinholecamera.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="pinholecamera1.jpg" alt="Image 1">
+<img src="pinholecamera2.jpg" alt="Image 2">
+<img src="pinholecamera3.jpg" alt="Image 3">
+<img src="pinholecamera4.jpg" alt="Image 4">
+<img src="pinholecamera5.jpg" alt="Image 5">
+<img src="pinholecamera6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
