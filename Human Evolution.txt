@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Evolution</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.part-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #bc8cff;
+}
+.part-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.part-box ul{
+padding-left:18px;
+margin:0;
+}
+.part-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>HUMAN EVOLUTION</h1>
+    <h2>(Origins & Development of Homo Sapiens)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IX onwards</p>
+<p><strong>Topic:</strong> Human Evolution</p>
+<p><strong>Concepts:</strong> Paleontology, Genetics, Anthropology</p>
+</div>
+</div>
+
+<!-- INTRO (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+About Human Evolution
+</div>
+<div class="card-body">
+<ul>
+<li>Human evolution is the scientific study of the origins and development of the human species.</li>
+<li>It encompasses the changes that occurred over millions of years leading to the modern human, Homo sapiens, from early primate ancestors.</li>
+<li>This field integrates evidence from paleontology, genetics, and anthropology to understand the complex process of human development.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Understanding Human Origins:</strong> Learning about human evolution provides insights into how anatomical and behavioral traits developed over time, helping explain human diversity and adaptation.</li>
+<li><strong>Educational Value:</strong> Studying human evolution highlights the adaptability and complexity of the human species, illustrating the interplay of environmental pressures and genetic changes in shaping human development.</li>
+</ul>
+</div>
+</div>
+
+<!-- STRUCTURE AND KEY STAGES -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-dna"></i>
+Structure and Key Stages
+</div>
+<div class="card-body">
+
+<div class="part-box">
+<h4>🐒 Early Primate Ancestors</h4>
+<ul>
+<li>Human evolution begins with small, arboreal primates that appeared around 60 million years ago.</li>
+<li>These primates were adapted for grasping and climbing.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🚶 Hominins</h4>
+<ul>
+<li>Around 7 million years ago, hominins emerged, leading to humans.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🦴 Australopithecus</h4>
+<ul>
+<li>Lived between 4 and 2 million years ago.</li>
+<li>Exhibited bipedalism and a mix of human-like and ape-like traits.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🧠 Homo habilis</h4>
+<ul>
+<li>Appeared around 2.4 million years ago.</li>
+<li>Had an increased brain size and used simple tools.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🔥 Homo erectus</h4>
+<ul>
+<li>Emerged around 1.9 million years ago.</li>
+<li>Showed further brain expansion.</li>
+<li>Used advanced tools and fire.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🧑 Neanderthals and Early Modern Humans</h4>
+<ul>
+<li>Neanderthals lived in Europe and Asia and were closely related to modern humans.</li>
+<li>Anatomically modern humans appeared in Africa about 300,000 years ago.</li>
+<li>Modern humans migrated across the world and interbred with Neanderthals.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>Human evolution occurred through gradual genetic changes over millions of years.</li>
+<li>Environmental pressures and natural selection favored traits that improved survival and adaptation.</li>
+<li>Over time, early primates evolved into hominins with larger brains, upright posture, and advanced tool-making abilities.</li>
+<li>These evolutionary changes eventually led to the emergence of modern humans (Homo sapiens).</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Observe the evolutionary sequence from early primates to modern humans shown in the model.</li>
+<li>Compare the differences in posture, skull size, height, and body structure at each stage.</li>
+<li>Identify how brain size and physical features changed over time.</li>
+<li>Discuss how adaptation and environmental changes influenced human evolution.</li>
+<li>Trace the gradual transformation leading to modern Homo sapiens.</li>
+</ul>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="humanevolution1.jpg" alt="Image 1">
+<img src="humanevolution2.jpg" alt="Image 2">
+<img src="humanevolution3.jpg" alt="Image 3">
+<img src="humanevolution4.jpg" alt="Image 4">
+<img src="humanevolution5.jpg" alt="Image 5">
+<img src="humanevolution6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
