@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reflex Action</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.part-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #bc8cff;
+}
+.part-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.part-box ul{
+padding-left:18px;
+margin:0;
+}
+.part-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.func-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ffb65e;
+}
+.func-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.func-box ul{
+padding-left:18px;
+margin:0;
+}
+.func-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>REFLEX ACTION</h1>
+    <h2>(Nervous System & Automatic Responses)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IX onwards</p>
+<p><strong>Topic:</strong> Reflex Action</p>
+<p><strong>Concepts:</strong> Nervous System, Receptors, Motor Response</p>
+</div>
+</div>
+
+<!-- INTRO (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+About Reflex Action
+</div>
+<div class="card-body">
+<ul>
+<li>Reflex actions are rapid, automatic responses to stimuli that occur without conscious thought.</li>
+<li>These actions are essential for protecting the body from harm and maintaining homeostasis by enabling quick responses to environmental changes.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Understanding Reflex Mechanisms:</strong> Learning about reflex actions helps understand how the body protects itself from damage and maintains equilibrium through rapid, automatic responses.</li>
+<li><strong>Educational Insight:</strong> Understanding reflexes illustrates the efficiency of the nervous system, highlighting the importance of automatic responses in daily functioning and survival.</li>
+</ul>
+</div>
+</div>
+
+<!-- STRUCTURE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-bolt"></i>
+Structure
+</div>
+<div class="card-body">
+
+<div class="part-box">
+<h4>📡 Receptor</h4>
+<ul>
+<li>The sensory receptor detects the stimulus (e.g., heat, pressure).</li>
+<li>Initiates the reflex action by generating an electrical signal.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🔗 Sensory Neuron</h4>
+<ul>
+<li>Carries the electrical signal from the receptor to the spinal cord.</li>
+<li>Acts as a pathway for transmitting sensory information.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🧠 Integration Center</h4>
+<ul>
+<li>Located in the spinal cord or brainstem.</li>
+<li>Processes the incoming signal.</li>
+<li>In most reflexes, the sensory neuron communicates directly with a motor neuron through a simple synapse.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🔗 Motor Neuron</h4>
+<ul>
+<li>Carries the response signal from the integration center to the effector organ.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>💪 Effector</h4>
+<ul>
+<li>Executes the response.</li>
+<li>May be a muscle or gland.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- FUNCTION OF EACH PART -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Function of Each Part
+</div>
+<div class="card-body">
+
+<div class="func-box">
+<h4>📡 Receptor</h4>
+<ul>
+<li>Detects changes in the environment (stimuli).</li>
+<li>Converts the stimulus into a nerve impulse.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🔗 Sensory Neuron</h4>
+<ul>
+<li>Transmits sensory information from the receptor to the spinal cord or brainstem.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🧠 Integration Center</h4>
+<ul>
+<li>Receives and processes the sensory signal.</li>
+<li>Determines the appropriate response.</li>
+<li>Connects sensory neurons to motor neurons.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🔗 Motor Neuron</h4>
+<ul>
+<li>Carries commands from the integration center to the effector.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>💪 Effector</h4>
+<ul>
+<li>Produces the reflex action.</li>
+<li>Muscles respond by contracting.</li>
+<li>Glands respond by releasing secretions.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-running"></i>
+Working of Reflex Action
+</div>
+<div class="card-body">
+<ul>
+<li>A stimulus (such as touching a hot object) is detected by the receptor.</li>
+<li>The receptor generates a nerve impulse.</li>
+<li>The sensory neuron carries the impulse to the spinal cord.</li>
+<li>The integration center processes the information and sends a response through a motor neuron.</li>
+<li>The motor neuron carries the impulse to the effector.</li>
+<li>The effector responds immediately, such as withdrawing the hand from the hot object.</li>
+<li>The response occurs automatically without conscious involvement of the brain, allowing rapid protection from injury.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="reflexaction_thumbnail.png">
+<source src="reflexaction.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="reflexaction1.jpg" alt="Image 1">
+<img src="reflexaction2.jpg" alt="Image 2">
+<img src="reflexaction3.jpg" alt="Image 3">
+<img src="reflexaction4.jpg" alt="Image 4">
+<img src="reflexaction5.jpg" alt="Image 5">
+<img src="reflexaction6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
