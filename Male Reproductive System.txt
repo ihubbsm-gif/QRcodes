@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Male Reproductive System</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.part-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #bc8cff;
+}
+.part-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.part-box ul{
+padding-left:18px;
+margin:0;
+}
+.part-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>MALE REPRODUCTIVE SYSTEM</h1>
+    <h2>(Anatomy & Reproductive Health)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IX onwards</p>
+<p><strong>Topic:</strong> Male Reproductive System</p>
+<p><strong>Concepts:</strong> Anatomy, Hormones, Reproductive Health</p>
+</div>
+</div>
+
+<!-- INTRO (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+About the Male Reproductive System
+</div>
+<div class="card-body">
+<ul>
+<li>The male reproductive system is a complex network of organs and structures responsible for producing, storing, and delivering sperm, as well as producing hormones essential for sexual function and secondary sexual characteristics.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Reproductive Health:</strong> Understanding the structure and function of the male reproductive system aids in recognizing and addressing health issues such as infertility and erectile dysfunction.</li>
+</ul>
+</div>
+</div>
+
+<!-- STRUCTURE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-shapes"></i>
+Structure
+</div>
+<div class="card-body">
+
+<div class="part-box">
+<h4>🔵 Testes</h4>
+<ul>
+<li>The primary male reproductive organs located in the scrotum.</li>
+<li>Responsible for sperm production and hormone secretion, particularly testosterone.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🌀 Epididymis</h4>
+<ul>
+<li>A coiled tube located on the back of each testis.</li>
+<li>Where sperm mature and are stored.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>➡️ Vas Deferens</h4>
+<ul>
+<li>A muscular tube that transports sperm from the epididymis to the ejaculatory duct.</li>
+<li>Also plays a role in sperm storage.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>💧 Seminal Vesicles</h4>
+<ul>
+<li>Glands that secrete a significant portion of the seminal fluid.</li>
+<li>Provide nutrients to sperm and aid in their mobility.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>⚪ Prostate Gland</h4>
+<ul>
+<li>Located below the bladder.</li>
+<li>Produces a fluid that nourishes and helps propel sperm during ejaculation.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>💧 Bulbourethral Glands (Cowper's Glands)</h4>
+<ul>
+<li>Small glands that secrete a lubricating fluid into the urethra.</li>
+<li>Prepare the urethra for the passage of sperm.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🔗 Urethra</h4>
+<ul>
+<li>The duct that runs through the penis.</li>
+<li>Carries both urine and semen out of the body.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>📍 Penis</h4>
+<ul>
+<li>The external organ that delivers sperm into the female reproductive tract.</li>
+<li>Consists of three main parts: Root, Body (shaft), and Glans (head).</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;">
+<img src="malereproductive1.jpg" alt="Image 1" style="width:100%;height:180px;object-fit:cover;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.15);">
+<img src="malereproductive2.jpg" alt="Image 2" style="width:100%;height:180px;object-fit:cover;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.15);">
+<img src="malereproductive3.jpg" alt="Image 3" style="width:100%;height:180px;object-fit:cover;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.15);">
+<img src="malereproductive4.jpg" alt="Image 4" style="width:100%;height:180px;object-fit:cover;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.15);">
+<img src="malereproductive5.jpg" alt="Image 5" style="width:100%;height:180px;object-fit:cover;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.15);">
+<img src="malereproductive6.jpg" alt="Image 6" style="width:100%;height:180px;object-fit:cover;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.15);">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
