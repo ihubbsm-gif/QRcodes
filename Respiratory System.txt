@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Respiratory System</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.part-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #bc8cff;
+}
+.part-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.part-box ul{
+padding-left:18px;
+margin:0;
+}
+.part-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>RESPIRATORY SYSTEM</h1>
+    <h2>(Anatomy, Gas Exchange & Breathing)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> X onwards</p>
+<p><strong>Topic:</strong> The Respiratory System</p>
+<p><strong>Concepts:</strong> Gas Exchange, Breathing, Lung Anatomy</p>
+</div>
+</div>
+
+<!-- INTRO (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+About the Respiratory System
+</div>
+<div class="card-body">
+<ul>
+<li>The human respiratory system is crucial for oxygenating the blood and removing carbon dioxide, a vital process for sustaining life.</li>
+<li>It involves a complex network of structures that work together to ensure efficient gas exchange.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Understanding Respiration:</strong> Knowledge of the respiratory system aids in diagnosing and managing respiratory conditions such as asthma, chronic obstructive pulmonary disease (COPD), and infections.</li>
+<li><strong>Educational Value:</strong> Learning about the respiratory system highlights the importance of efficient gas exchange and its role in overall health and homeostasis.</li>
+</ul>
+</div>
+</div>
+
+<!-- STRUCTURE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-shapes"></i>
+Structure
+</div>
+<div class="card-body">
+
+<div class="part-box">
+<h4>👃 Nose and Nasal Cavity</h4>
+<ul>
+<li>Air enters through the nostrils, where it is filtered, warmed, and humidified.</li>
+<li>The nasal cavity, lined with mucous membranes and cilia, traps dust and microbes.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🔗 Pharynx</h4>
+<ul>
+<li>The throat, divided into Nasopharynx, Oropharynx, and Laryngopharynx.</li>
+<li>Serves as a passage for air from the nasal cavity to the larynx and oesophagus.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🎙️ Larynx</h4>
+<ul>
+<li>Known as the voice box.</li>
+<li>Contains the vocal cords.</li>
+<li>Prevents food from entering the airway while directing air to the trachea.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🫁 Trachea</h4>
+<ul>
+<li>The windpipe, supported by cartilage rings.</li>
+<li>Carries air from the larynx to the bronchi.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🌿 Bronchi and Bronchioles</h4>
+<ul>
+<li>The trachea splits into bronchi, which branch into smaller bronchioles.</li>
+<li>Distribute air to the lungs.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🫁 Lungs</h4>
+<ul>
+<li>The primary organs of respiration.</li>
+<li>Consist of the Right Lung (three lobes) and Left Lung (two lobes).</li>
+<li>Contain alveoli for gas exchange.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🔵 Alveoli</h4>
+<ul>
+<li>Tiny air sacs where oxygen enters the blood and carbon dioxide is removed.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>💪 Diaphragm and Intercostal Muscles</h4>
+<ul>
+<li>Contract to expand the chest cavity.</li>
+<li>Draw air into the lungs.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>Air enters the body through the nose and passes through the pharynx, larynx, and trachea.</li>
+<li>The trachea carries air into the bronchi and bronchioles of the lungs.</li>
+<li>In the alveoli, oxygen diffuses into the blood while carbon dioxide moves from the blood into the lungs.</li>
+<li>The diaphragm and intercostal muscles help in inhalation and exhalation by expanding and contracting the chest cavity.</li>
+<li>Carbon dioxide is expelled from the body during exhalation.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="respiratorysystem_thumbnail.png">
+<source src="respiratorysystem.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="respiratorysystem1.jpg" alt="Image 1">
+<img src="respiratorysystem2.jpg" alt="Image 2">
+<img src="respiratorysystem3.jpg" alt="Image 3">
+<img src="respiratorysystem4.jpg" alt="Image 4">
+<img src="respiratorysystem5.jpg" alt="Image 5">
+<img src="respiratorysystem6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
