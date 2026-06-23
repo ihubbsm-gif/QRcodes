@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ear</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.part-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #bc8cff;
+}
+.part-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.part-box ul{
+padding-left:18px;
+margin:0;
+}
+.part-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+.func-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ffb65e;
+}
+.func-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.func-box ul{
+padding-left:18px;
+margin:0;
+}
+.func-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>EAR</h1>
+    <h2>(Hearing, Balance & Sensory Anatomy)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> VIII onwards</p>
+<p><strong>Topic:</strong> The Human Ear</p>
+<p><strong>Concepts:</strong> Hearing, Balance, Sensory Anatomy</p>
+</div>
+</div>
+
+<!-- INTRO (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+About the Ear
+</div>
+<div class="card-body">
+<ul>
+<li>The ear is a complex sensory organ responsible for hearing and balance.</li>
+<li>Located on either side of the head.</li>
+<li>It converts sound waves into electrical signals and helps maintain equilibrium.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Auditory and Balance Health:</strong> Understanding the ear's anatomy and function aids in recognizing and treating hearing loss, ear infections, and balance disorders.</li>
+<li><strong>Educational Value:</strong> Learning about the structure and function of the ear helps students understand how sound is perceived and how balance is maintained, highlighting the importance of ear health in communication and daily activities.</li>
+</ul>
+</div>
+</div>
+
+<!-- STRUCTURE -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-shapes"></i>
+Structure
+</div>
+<div class="card-body">
+
+<div class="part-box">
+<h4>👂 Outer Ear</h4>
+<ul>
+<li>Includes the pinna (auricle) and the external auditory canal.</li>
+<li>The pinna collects sound waves and directs them into the canal.</li>
+<li>The canal leads to the eardrum (tympanic membrane).</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🦴 Middle Ear</h4>
+<ul>
+<li>Contains three tiny bones called ossicles: Malleus (Hammer), Incus (Anvil), Stapes (Stirrup).</li>
+<li>These bones amplify and transmit vibrations from the eardrum to the oval window of the inner ear.</li>
+<li>The Eustachian tube connects the middle ear to the throat and helps equalize pressure.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🌀 Inner Ear</h4>
+<ul>
+<li>Comprises the cochlea and the vestibular system.</li>
+<li>The cochlea contains hair cells that convert sound vibrations into electrical signals.</li>
+<li>The vestibular system, including the semicircular canals and vestibule, helps maintain balance and spatial orientation.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- FUNCTION OF EACH PART -->
+<div class="card orange full-width">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Function of Each Part
+</div>
+<div class="card-body">
+
+<div class="func-box">
+<h4>👂 Pinna (Auricle)</h4>
+<ul>
+<li>Collects sound waves from the surroundings.</li>
+<li>Directs sound waves into the external auditory canal.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🎚️ External Auditory Canal</h4>
+<ul>
+<li>Carries sound waves to the eardrum.</li>
+<li>Protects the inner parts of the ear.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🥁 Eardrum (Tympanic Membrane)</h4>
+<ul>
+<li>Vibrates when sound waves strike it.</li>
+<li>Transfers vibrations to the ossicles.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🔨 Malleus (Hammer)</h4>
+<ul>
+<li>Receives vibrations from the eardrum.</li>
+<li>Passes vibrations to the incus.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>⚒️ Incus (Anvil)</h4>
+<ul>
+<li>Transmits vibrations from the malleus to the stapes.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🦶 Stapes (Stirrup)</h4>
+<ul>
+<li>Amplifies and transmits vibrations to the inner ear through the oval window.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🎈 Eustachian Tube</h4>
+<ul>
+<li>Equalizes air pressure on both sides of the eardrum.</li>
+<li>Connects the middle ear to the throat.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🐚 Cochlea</h4>
+<ul>
+<li>Converts sound vibrations into electrical signals using specialized hair cells.</li>
+<li>Sends these signals to the brain for interpretation.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>⚖️ Vestibular System</h4>
+<ul>
+<li>Includes the semicircular canals and vestibule.</li>
+<li>Detects head movement and body position.</li>
+<li>Maintains balance and spatial orientation.</li>
+</ul>
+</div>
+
+<div class="func-box">
+<h4>🧠 Auditory Nerve</h4>
+<ul>
+<li>Carries electrical signals from the cochlea to the brain.</li>
+<li>Enables the brain to recognize and interpret sounds.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="ear_thumbnail.png">
+<source src="ear.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="ear1.jpg" alt="Image 1">
+<img src="ear2.jpg" alt="Image 2">
+<img src="ear3.jpg" alt="Image 3">
+<img src="ear4.jpg" alt="Image 4">
+<img src="ear5.jpg" alt="Image 5">
+<img src="ear6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
