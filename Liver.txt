@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liver</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+.part-box{
+background:#f8f9fa;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+border-left:4px solid #ff6b6b;
+}
+.part-box h4{
+font-size:1.05rem;
+font-weight:700;
+color:#003d91;
+margin-bottom:8px;
+}
+.part-box ul{
+padding-left:18px;
+margin:0;
+}
+.part-box li{
+font-size:0.95rem;
+margin-bottom:6px;
+}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>LIVER</h1>
+    <h2>(Anatomy, Function & Metabolism)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> IX onwards</p>
+<p><strong>Topic:</strong> The Liver</p>
+<p><strong>Concepts:</strong> Anatomy, Metabolism, Detoxification</p>
+</div>
+</div>
+
+<!-- INTRO (Science Involved) -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+About the Liver
+</div>
+<div class="card-body">
+<ul>
+<li>The liver is a vital organ with a multifaceted role in maintaining the body's overall health and homeostasis.</li>
+<li>Located in the upper right abdomen.</li>
+<li>It is one of the largest organs and performs a wide array of functions essential for life.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOMES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Outcomes
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Health Understanding:</strong> Knowledge of liver function helps in recognizing symptoms of liver disease, such as jaundice or abnormal blood tests. Understand the importance of liver health.</li>
+<li><strong>Educational Value:</strong> Learning about the liver's roles in metabolism, detoxification, and bile production highlights its significance in overall bodily function. Understand the interconnection of various physiological processes.</li>
+</ul>
+</div>
+</div>
+
+<!-- STRUCTURE -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-shapes"></i>
+Structure
+</div>
+<div class="card-body">
+<ul>
+<li>The liver is divided into two main lobes.</li>
+<li>These lobes are further subdivided into smaller functional units called lobules.</li>
+<li>Each lobule is comprised of liver cells, or hepatocytes, arranged around a central vein.</li>
+<li>The liver also contains a network of bile ducts and blood vessels.</li>
+<li><strong>Hepatic Artery</strong> – supplies oxygenated blood.</li>
+<li><strong>Hepatic Portal Vein</strong> – delivers nutrient-rich blood from the digestive tract.</li>
+</ul>
+</div>
+</div>
+
+<!-- FUNCTION OF EACH PART -->
+<div class="card red full-width">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Function of Each Part
+</div>
+<div class="card-body">
+
+<div class="part-box">
+<h4>🧫 Hepatocytes</h4>
+<ul>
+<li>These liver cells are responsible for a variety of metabolic processes.</li>
+<li>Synthesize proteins such as albumin and clotting factors.</li>
+<li>Detoxify harmful substances.</li>
+<li>Produce bile, which is essential for the digestion and absorption of fats in the small intestine.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🟡 Bile Ducts</h4>
+<ul>
+<li>Transport bile produced by hepatocytes to the gallbladder and small intestine.</li>
+<li>Bile helps emulsify fats, aiding in their digestion and absorption.</li>
+</ul>
+</div>
+
+<div class="part-box">
+<h4>🩸 Hepatic Artery and Portal Vein</h4>
+<ul>
+<li>The hepatic artery provides oxygenated blood to the liver.</li>
+<li>The portal vein delivers blood rich in nutrients absorbed from the digestive tract.</li>
+<li>This dual blood supply supports the liver's extensive metabolic functions and detoxification processes.</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="liver_thumbnail.png">
+<source src="liver.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="liver1.jpg" alt="Image 1">
+<img src="liver2.jpg" alt="Image 2">
+<img src="liver3.jpg" alt="Image 3">
+<img src="liver4.jpg" alt="Image 4">
+<img src="liver5.jpg" alt="Image 5">
+<img src="liver6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
