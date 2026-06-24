@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNA – The Genetic Molecule</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>DNA – THE GENETIC MOLECULE</h1>
+    <h2>(Bio-molecules)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> 12</p>
+<p><strong>Book Name:</strong> Chemistry – II</p>
+<p><strong>Chapter No:</strong> 10</p>
+<p><strong>Chapter:</strong> Bio-molecules</p>
+</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+<div class="card-body">
+<ul>
+<li>Build a model of the DNA double helix.</li>
+<li>Identify the components of DNA: Nucleotides, Sugar-phosphate backbone, and Nitrogenous bases (A, T, C, G).</li>
+<li>Explain hydrogen bonding between complementary bases: Adenine–Thymine (A-T) and Cytosine–Guanine (C-G).</li>
+<li>Relate DNA structure to its role as genetic material.</li>
+<li>Appreciate the scientific contributions of Rosalind Franklin, James Watson, and Francis Crick.</li>
+</ul>
+</div>
+</div>
+
+<!-- SCIENCE INVOLVED -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Science Involved
+</div>
+<div class="card-body">
+<ul>
+<li>DNA is composed of nucleotides containing a sugar molecule, a phosphate group, and a nitrogenous base.</li>
+<li>The DNA double helix consists of two sugar-phosphate backbones and complementary base pairs joined by hydrogen bonds.</li>
+<li>Base pairing follows a specific pattern: A pairs with T, and C pairs with G.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>DNA stores genetic information in the sequence of its nitrogenous bases.</li>
+<li>Complementary base pairing (A-T and C-G) holds the two strands together.</li>
+<li>During replication, the strands separate and serve as templates for the formation of new DNA molecules.</li>
+<li>The genetic information carried by DNA controls the structure and function of living organisms.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li><strong>DNA Replication:</strong> Understanding how genetic information is copied during cell division.</li>
+<li><strong>DNA Fingerprinting:</strong> Identification of individuals using unique DNA sequences.</li>
+<li><strong>Genetic Testing:</strong> Detection and diagnosis of genetic disorders and inherited conditions.</li>
+<li><strong>GMOs (Genetically Modified Organisms):</strong> Modification of genes to obtain desirable traits in plants and animals.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="dnageneticmolecule_thumbnail.png">
+<source src="dnageneticmolecule.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="dnageneticmolecule1.jpg" alt="Image 1">
+<img src="dnageneticmolecule2.jpg" alt="Image 2">
+<img src="dnageneticmolecule3.jpg" alt="Image 3">
+<img src="dnageneticmolecule4.jpg" alt="Image 4">
+<img src="dnageneticmolecule5.jpg" alt="Image 5">
+<img src="dnageneticmolecule6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
