@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fast Breeder Nuclear Power Reactor</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+body{
+background:#f4f6f9;
+padding:20px;
+}
+.container{
+max-width:1400px;
+margin:auto;
+}
+.header{
+background:linear-gradient(90deg,#002f6c,#003d91);
+color:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.header h1{
+text-align:center;
+font-size:2rem;
+letter-spacing:3px;
+font-weight:900;
+}
+.header h2{
+text-align:center;
+font-size:1.5rem;
+letter-spacing:3px;
+font-weight:600;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.card-header{
+padding:15px 20px;
+font-size:1.5rem;
+font-weight:700;
+display:flex;
+align-items:center;
+gap:12px;
+}
+.card-body{
+padding:25px;
+font-size:1.1rem;
+line-height:1.7;
+}
+.yellow{border:3px solid #f3c54b;}
+.yellow .card-header{background:#fff6db;}
+.green{border:3px solid #9ad17a;}
+.green .card-header{background:#eef9e7;}
+.blue{border:3px solid #5aa9ff;}
+.blue .card-header{background:#ebf4ff;}
+.purple{border:3px solid #bc8cff;}
+.purple .card-header{background:#f4ecff;}
+.orange{border:3px solid #ffb65e;}
+.orange .card-header{background:#fff2de;}
+.pink{border:3px solid #ff7caf;}
+.pink .card-header{background:#ffeaf3;}
+.teal{border:3px solid #2ecc71;}
+.teal .card-header{background:#e8f8f0;}
+.red{border:3px solid #ff6b6b;}
+.red .card-header{background:#ffe8e8;}
+.cyan{border:3px solid #2ec7d6;}
+.cyan .card-header{background:#eafcff;}
+ul{padding-left:25px;}
+li{margin-bottom:12px;}
+video{width:100%;border-radius:15px;}
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+}
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+.gallery img:hover{transform:scale(1.05);}
+.full-width{grid-column:1/-1;}
+.card-header i{font-size:1.5rem;}
+@media(max-width:900px){
+.grid{grid-template-columns:1fr;}
+.header h1{font-size:2rem;}
+.card-body{font-size:1rem;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>FAST BREEDER NUCLEAR POWER REACTOR</h1>
+    <h2>(Minerals and Energy Resources)</h2>
+</div>
+
+<div class="grid">
+
+<!-- ACADEMIC INFORMATION -->
+<div class="card yellow">
+<div class="card-header">
+<i class="fas fa-graduation-cap"></i>
+Academic Information
+</div>
+<div class="card-body">
+<p><strong>Class:</strong> 10</p>
+<p><strong>Book Name:</strong> Contemporary India – II</p>
+<p><strong>Chapter:</strong> Minerals and Energy Resources</p>
+</div>
+</div>
+
+<!-- INTRODUCTION -->
+<div class="card blue">
+<div class="card-header">
+<i class="fas fa-info-circle"></i>
+Introduction
+</div>
+<div class="card-body">
+<ul>
+<li>Fast breeder nuclear power reactors represent a promising advancement in nuclear energy technology.</li>
+<li>They offer increased fuel efficiency and reduced nuclear waste.</li>
+<li>Operating on the principles of nuclear fission and breeding, these reactors help produce sustainable and reliable energy.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="card green">
+<div class="card-header">
+<i class="fas fa-bullseye"></i>
+Learning Objectives
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the contribution of atomic energy to development and energy security.</li>
+<li>Explain the basic principles of nuclear energy.</li>
+<li>Understand the operation and significance of fast breeder reactors.</li>
+<li>Discuss their advantages in energy production and sustainability.</li>
+</ul>
+</div>
+</div>
+
+<!-- PRINCIPLE BEHIND EXHIBIT -->
+<div class="card purple">
+<div class="card-header">
+<i class="fas fa-lightbulb"></i>
+Principle Behind Exhibit
+</div>
+<div class="card-body">
+<ul>
+<li>Fast breeder reactors operate on the principle of nuclear fission and fuel breeding.</li>
+<li>They convert fertile material such as Uranium-238 (U238) into fissile material such as Plutonium-239 (Pu239) through neutron capture.</li>
+<li>Unlike conventional reactors, fast breeder reactors use fast neutrons, allowing more efficient production of nuclear fuel.</li>
+</ul>
+</div>
+</div>
+
+<!-- THEORY BEHIND THE REACTOR -->
+<div class="card purple full-width">
+<div class="card-header">
+<i class="fas fa-atom"></i>
+Theory Behind the Reactor
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Uranium Composition:</strong> Natural uranium contains about 99.3% U238 and 0.7% U235.</li>
+<li><strong>Fission Process:</strong> U235 undergoes fission and releases large amounts of energy.</li>
+<li><strong>Breeder Process:</strong> U238 absorbs fast neutrons and is converted into Pu239.</li>
+<li><strong>Fuel Composition:</strong> A mixture of plutonium and uranium produces more energy than natural uranium alone.</li>
+<li>The Prototype Fast Breeder Reactor (PFBR) at Kalpakkam, Tamil Nadu, uses plutonium-uranium oxide fuel and liquid sodium as coolant.</li>
+</ul>
+</div>
+</div>
+
+<!-- WORKING -->
+<div class="card orange">
+<div class="card-header">
+<i class="fas fa-cog"></i>
+Working
+</div>
+<div class="card-body">
+<ul>
+<li>Fast neutrons initiate fission reactions inside the reactor core.</li>
+<li>During the process, Uranium-238 captures neutrons and gradually transforms into Plutonium-239.</li>
+<li>The generated heat is used to produce steam.</li>
+<li>Steam rotates turbines connected to generators, producing electricity.</li>
+<li>The newly produced plutonium can be reused as fuel, creating a self-sustaining nuclear fuel cycle.</li>
+</ul>
+</div>
+</div>
+
+<!-- PARTICIPATE & OBSERVE -->
+<div class="card pink">
+<div class="card-header">
+<i class="fas fa-hand-pointer"></i>
+Participate &amp; Observe
+</div>
+<div class="card-body">
+<ul>
+<li>Observe the reactor model and identify its major components.</li>
+<li>Trace the conversion of Uranium-238 into Plutonium-239.</li>
+<li>Understand how nuclear fission produces heat energy.</li>
+<li>Discuss how fast breeder reactors improve fuel utilization.</li>
+<li>Compare fast breeder reactors with conventional nuclear reactors.</li>
+</ul>
+</div>
+</div>
+
+<!-- APPLICATIONS -->
+<div class="card pink full-width">
+<div class="card-header">
+<i class="fas fa-cogs"></i>
+Applications
+</div>
+<div class="card-body">
+<ul>
+<li>Electricity generation for homes, industries, and infrastructure.</li>
+<li>Improved utilization of available nuclear fuel resources.</li>
+<li>Reduction in long-term nuclear waste generation.</li>
+<li>Support for sustainable and long-term energy production.</li>
+<li>Enhancement of national energy security.</li>
+</ul>
+</div>
+</div>
+
+<!-- SIGNIFICANCE -->
+<div class="card teal">
+<div class="card-header">
+<i class="fas fa-star"></i>
+Significance
+</div>
+<div class="card-body">
+<ul>
+<li><strong>Energy Security:</strong> Provides a reliable and economically viable source of power.</li>
+<li><strong>Nuclear Fuel Cycle:</strong> Makes efficient use of nuclear materials for sustained energy generation.</li>
+<li><strong>Resource Conservation:</strong> Extends the availability of nuclear fuel resources.</li>
+<li><strong>Environmental Benefits:</strong> Helps reduce nuclear waste and supports cleaner energy production.</li>
+</ul>
+</div>
+</div>
+
+<!-- LEARNING OUTCOME -->
+<div class="card green full-width">
+<div class="card-header">
+<i class="fas fa-check-circle"></i>
+Learning Outcome
+</div>
+<div class="card-body">
+<ul>
+<li>Understand the principles and operation of fast breeder nuclear reactors.</li>
+<li>Explain the process of nuclear fission and fuel breeding.</li>
+<li>Recognize the importance of fast breeder reactors in energy security and sustainability.</li>
+<li>Appreciate the role of advanced nuclear technology in meeting future energy demands.</li>
+</ul>
+</div>
+</div>
+
+<!-- VIDEO -->
+<div class="card red">
+<div class="card-header">
+<i class="fas fa-video"></i>
+Animated Video
+</div>
+<div class="card-body">
+<video controls poster="fastbreeder_thumbnail.png">
+<source src="fastbreeder.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div>
+
+<!-- IMAGE GALLERY -->
+<div class="card cyan full-width">
+<div class="card-header">
+<i class="fas fa-images"></i>
+Image Gallery
+</div>
+<div class="card-body">
+<div class="gallery">
+<img src="fastbreeder1.jpg" alt="Image 1">
+<img src="fastbreeder2.jpg" alt="Image 2">
+<img src="fastbreeder3.jpg" alt="Image 3">
+<img src="fastbreeder4.jpg" alt="Image 4">
+<img src="fastbreeder5.jpg" alt="Image 5">
+<img src="fastbreeder6.jpg" alt="Image 6">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
