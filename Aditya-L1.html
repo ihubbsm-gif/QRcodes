@@ -33,7 +33,7 @@ justify-content: space-between;
 gap: 20px;
 }
 
-/* BOTH LOGOS LOCKED TO THE EXACT SAME FIXED CIRCLE SIZE */
+/* DESKTOP LOGO BASE STYLES */
 .header-logo {
 width: 130px;
 height: 130px;
@@ -46,7 +46,7 @@ flex-shrink: 0;
 overflow: hidden;
 }
 
-/* ONLY SCALING THE INTERNAL GRAPHICS TO ELIMINATE THE EXTRA WHITE EDGE */
+/* INTERNAL EMBLEM ZOOM TO REDUCE EXTRA WHITE BORDER */
 .bet-logo {
 transform: scale(1.28); 
 }
@@ -188,21 +188,27 @@ padding: 12px;
 gap: 8px;
 }
 
-/* BOTH LOGOS STRICLY FIXED AT 75PX X 75PX CIRLCES */
 .header-logo {
-width: 75px;  
-height: 75px;
+border-radius: 50%;
 object-fit: cover;
 padding: 0px;
 background: white;       
 border: 2px solid white; 
+flex-shrink: 0;
+overflow: hidden;
 }
 
-/* CONTROL ONLY THE INNER GRAPHIC ZOOM WITHOUT CHANGING CONTAINER SIZE */
+/* ONLY SHRINKING THE BET LOGO CIRCLE A LITTLE BIT ON MOBILE */
 .bet-logo {
+width: 64px;  
+height: 64px;
 transform: scale(1.28);
 }
+
+/* HUB LOGO CIRCLE REMAINS SECURE AT 75PX */
 .hub-logo {
+width: 75px;  
+height: 75px;
 transform: scale(1.22);
 }
 
@@ -226,7 +232,7 @@ letter-spacing: 0.5px;
 <div class="container">
 
 <div class="header">
-    <!-- BET Logo -->
+    <!-- BET Logo (Slightly smaller container on mobile) -->
     <img src="bet-logo.png" alt="BET Logo" class="header-logo bet-logo">
     
     <div class="header-text">
@@ -234,7 +240,7 @@ letter-spacing: 0.5px;
         <h2>(India's First Dedicated Solar Mission)</h2>
     </div>
     
-    <!-- Hub Logo -->
+    <!-- Hub Logo (Stays normal size) -->
     <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo hub-logo">
 </div>
 
