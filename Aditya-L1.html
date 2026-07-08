@@ -176,33 +176,30 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 .card-header i{font-size:1.5rem;}
 
 /* MOBILE RESPONSIVE CODE */
+/* UPDATE THIS INSIDE YOUR @MEDIA (MAX-WIDTH: 900PX) BLOCK */
 @media(max-width:900px){
-.grid{grid-template-columns:1fr;}
-.card-body{font-size:1rem;}
 
-.header {
-flex-direction: row; 
-align-items: center;
-justify-content: space-between;
-padding: 12px;
-gap: 8px;
-}
+    .header-logo {
+        object-fit: cover;
+        padding: 0px;
+        background: white;       
+        border: 2px solid white; 
+    }
 
-.header-logo {
-width: 75px;  
-height: 75px;
-object-fit: cover;
-padding: 0px;
-background: white;       
-border: 2px solid white; 
-}
+    /* Slightly downsized to 68px so its outer circle visually matches the Hub logo */
+    .bet-logo {
+        width: 68px;  
+        height: 68px;
+        transform: scale(1.35);
+    }
 
-/* MOBILE INDIVIDUAL TUNING */
-.bet-logo {
-transform: scale(1.35);
-}
-.hub-logo {
-transform: scale(1.15);
+    /* Maintained at 75px since its scaling looks correct */
+    .hub-logo {
+        width: 75px;  
+        height: 75px;
+        transform: scale(1.15);
+    }
+
 }
 
 .header-text {
