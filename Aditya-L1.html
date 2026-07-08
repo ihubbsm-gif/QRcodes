@@ -32,17 +32,28 @@ align-items: center;
 justify-content: space-between;
 gap: 20px;
 }
+
+/* SHARED LOGO STYLES */
 .header-logo {
 width: 140px;
 height: 140px;
 border-radius: 50%;
-object-fit: cover;       /* Zooms in to eliminate excess white space inside */
-padding: 2px;            /* Tightened padding to maximize logo size */
+object-fit: cover;       
+padding: 0px;            /* Removed padding to minimize the outer white band */
 background: white;       
-border: 3px solid white; 
+border: 2px solid white; 
 flex-shrink: 0;
 overflow: hidden;
 }
+
+/* INDIVIDUAL DESKTOP ZOOM TUNING */
+.bet-logo {
+transform: scale(1.35); /* Heavy zoom to crop out the wide white circle margin */
+}
+.hub-logo {
+transform: scale(1.15); /* Balanced zoom so the text doesn't cut off */
+}
+
 .header-text {
 flex-grow: 1;
 text-align: center;
@@ -177,14 +188,21 @@ padding: 12px;
 gap: 8px;
 }
 
-/* Made mobile logos larger and used object-fit: cover to fill the white ring completely */
 .header-logo {
 width: 75px;  
 height: 75px;
 object-fit: cover;
-padding: 2px;
+padding: 0px;
 background: white;       
 border: 2px solid white; 
+}
+
+/* MOBILE INDIVIDUAL TUNING */
+.bet-logo {
+transform: scale(1.35);
+}
+.hub-logo {
+transform: scale(1.15);
 }
 
 .header-text {
@@ -207,14 +225,16 @@ letter-spacing: 0.5px;
 <div class="container">
 
 <div class="header">
-    <img src="bet-logo.png" alt="BET Logo" class="header-logo">
+    <!-- Assigned unique 'bet-logo' class -->
+    <img src="bet-logo.png" alt="BET Logo" class="header-logo bet-logo">
     
     <div class="header-text">
         <h1>ADITYA-L1</h1>
         <h2>(India's First Dedicated Solar Mission)</h2>
     </div>
     
-    <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo">
+    <!-- Assigned unique 'hub-logo' class -->
+    <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo hub-logo">
 </div>
 
 <div class="grid">
