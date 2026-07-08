@@ -46,9 +46,9 @@ flex-shrink: 0;
 overflow: hidden;
 }
 
-/* INTERNAL EMBLEM ZOOM TO REDUCE EXTRA WHITE BORDER */
+/* INTERNAL EMBLEM ZOOM TO REDUCE EXTRA WHITE BORDER MATCHING THE BLUE TEXT RING */
 .bet-logo {
-transform: scale(1.28); 
+transform: scale(1.48); 
 }
 .hub-logo {
 transform: scale(1.22); 
@@ -198,11 +198,11 @@ flex-shrink: 0;
 overflow: hidden;
 }
 
-/* ONLY SHRINKING THE BET LOGO CIRCLE A LITTLE BIT ON MOBILE */
+/* MAINTAINING YOUR 70PX SIZE BUT FIXING THE WHITE EDGE PORTION */
 .bet-logo {
 width: 70px;  
 height: 70px;
-transform: scale(1.22);
+transform: scale(1.48);
 }
 
 /* HUB LOGO CIRCLE REMAINS SECURE AT 75PX */
@@ -232,7 +232,7 @@ letter-spacing: 0.5px;
 <div class="container">
 
 <div class="header">
-    <!-- BET Logo (Slightly smaller container on mobile) -->
+    <!-- BET Logo (Kept at your custom 70px size) -->
     <img src="bet-logo.png" alt="BET Logo" class="header-logo bet-logo">
     
     <div class="header-text">
