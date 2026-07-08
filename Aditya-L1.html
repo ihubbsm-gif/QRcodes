@@ -28,18 +28,35 @@ border-radius:25px;
 padding:25px;
 margin-bottom:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.15);
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+}
+.header-logo {
+width: 90px;
+height: 90px;
+border-radius: 50%;
+object-fit: cover;
+background: white;
+border: 2px solid white;
+flex-shrink: 0;
+}
+.header-text {
+flex-grow: 1;
+text-align: center;
 }
 .header h1{
-text-align:center;
 font-size:4rem;
 letter-spacing:3px;
 font-weight:900;
+margin: 0;
 }
 .header h2{
-text-align:center;
 font-size:1.5rem;
 letter-spacing:3px;
 font-weight:600;
+margin: 5px 0 0 0;
 }
 .grid{
 display:grid;
@@ -157,8 +174,12 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 <div class="container">
 
 <div class="header">
-    <h1>ADITYA-L1</h1>
-    <h2>(India's First Dedicated Solar Mission)</h2>
+    <img src="bet-logo.png" alt="BET Logo" class="header-logo">
+    <div class="header-text">
+        <h1>ADITYA-L1</h1>
+        <h2>(India's First Dedicated Solar Mission)</h2>
+    </div>
+    <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo">
 </div>
 
 <div class="grid">
