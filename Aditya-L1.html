@@ -33,7 +33,7 @@ justify-content: space-between;
 gap: 20px;
 }
 
-/* SHARED UNIFORM LOGO CONTAINERS (DESKTOP) */
+/* BOTH LOGOS LOCKED TO THE EXACT SAME FIXED CIRCLE SIZE */
 .header-logo {
 width: 130px;
 height: 130px;
@@ -46,9 +46,9 @@ flex-shrink: 0;
 overflow: hidden;
 }
 
-/* INCREASING THE INNER LOGO SIZE TO SHRINK THE OUTER WHITE LINE AREA */
+/* ONLY SCALING THE INTERNAL GRAPHICS TO ELIMINATE THE EXTRA WHITE EDGE */
 .bet-logo {
-transform: scale(1.45); 
+transform: scale(1.28); 
 }
 .hub-logo {
 transform: scale(1.22); 
@@ -188,7 +188,7 @@ padding: 12px;
 gap: 8px;
 }
 
-/* UNIFORM MOBILE SIZE CONTROLS */
+/* BOTH LOGOS STRICLY FIXED AT 75PX X 75PX CIRLCES */
 .header-logo {
 width: 75px;  
 height: 75px;
@@ -198,9 +198,9 @@ background: white;
 border: 2px solid white; 
 }
 
-/* KEEPS INNER EMBLEM SCALED PROPERLY ON MOBILE AS WELL */
+/* CONTROL ONLY THE INNER GRAPHIC ZOOM WITHOUT CHANGING CONTAINER SIZE */
 .bet-logo {
-transform: scale(1.45);
+transform: scale(1.28);
 }
 .hub-logo {
 transform: scale(1.22);
