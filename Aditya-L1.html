@@ -166,22 +166,33 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 .grid{grid-template-columns:1fr;}
 .card-body{font-size:1rem;}
 
-/* Fixes the header box so logos don't break out on mobile */
+/* Keeps everything side-by-side on mobile screens */
 .header {
-flex-direction: column;
-text-align: center;
-padding: 20px;
-gap: 15px;
+flex-direction: row; /* Forces left-to-right alignment */
+align-items: center;
+justify-content: space-between;
+padding: 15px;
+gap: 10px;
 }
+
+/* Shrinks the logos slightly so they fit cleanly on the sides */
 .header-logo {
-width: 100px;  /* Scales down slightly on mobile so it doesn't look huge */
-height: 100px;
+width: 65px;  
+height: 65px;
+}
+
+/* Adjusts the text size so it fits perfectly in the middle column */
+.header-text {
+flex-grow: 1;
+text-align: center;
 }
 .header h1 {
-font-size: 2rem; /* Shrinks the headline font so it fits mobile screens */
+font-size: 1.4rem; /* Makes the title fit without wrapping poorly */
+letter-spacing: 1px;
 }
 .header h2 {
-font-size: 1.1rem;
+font-size: 0.85rem; /* Shrinks the subtitle slightly for mobile */
+letter-spacing: 1px;
 }
 }
 </style>
