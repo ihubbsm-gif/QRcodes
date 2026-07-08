@@ -27,7 +27,6 @@ border-radius:25px;
 padding:25px;
 margin-bottom:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.15);
-/* Keeps logos side-by-side on laptop */
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -37,13 +36,12 @@ gap: 20px;
 width: 140px;
 height: 140px;
 border-radius: 50%;
-/* Changed from contain to scale to zoom in and fill the white space */
-object-fit: cover; 
-transform: scale(1.15); 
-padding: 5px;        
+object-fit: cover;       /* Zooms in to eliminate excess white space inside */
+padding: 2px;            /* Tightened padding to maximize logo size */
 background: white;       
 border: 3px solid white; 
 flex-shrink: 0;
+overflow: hidden;
 }
 .header-text {
 flex-grow: 1;
@@ -171,36 +169,35 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 .grid{grid-template-columns:1fr;}
 .card-body{font-size:1rem;}
 
-/* Keeps logos side-by-side on mobile without dropping up/down */
 .header {
 flex-direction: row; 
 align-items: center;
 justify-content: space-between;
-padding: 15px;
-gap: 10px;
+padding: 12px;
+gap: 8px;
 }
-/* Scales down logos and fixes cut-off names on phone screens */
+
+/* Made mobile logos larger and used object-fit: cover to fill the white ring completely */
 .header-logo {
-width: 65px;  
-height: 65px;
-/* Keeps it zoomed in on mobile screens too */
+width: 75px;  
+height: 75px;
 object-fit: cover;
-transform: scale(1.15);
+padding: 2px;
 background: white;       
-border: 3px solid white; 
+border: 2px solid white; 
 }
-/* Fits headline text cleanly in the center */
+
 .header-text {
 flex-grow: 1;
 text-align: center;
 }
 .header h1 {
-font-size: 1.4rem; 
-letter-spacing: 1px;
+font-size: 1.3rem; 
+letter-spacing: 0.5px;
 }
 .header h2 {
-font-size: 0.85rem; 
-letter-spacing: 1px;
+font-size: 0.8rem; 
+letter-spacing: 0.5px;
 }
 }
 </style>
@@ -209,13 +206,14 @@ letter-spacing: 1px;
 <body>
 <div class="container">
 
-<!-- THE NEW HEADER SECTION WITH BOTH LOGOS -->
 <div class="header">
-    <img src="bet-logo.png" alt="BET Logo" class="header-logo">
+    <img src="bet-logo.jpg" alt="BET Logo" class="header-logo">
+    
     <div class="header-text">
         <h1>ADITYA-L1</h1>
         <h2>(India's First Dedicated Solar Mission)</h2>
     </div>
+    
     <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo">
 </div>
 
