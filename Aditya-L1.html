@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aditya-L1</title>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 *{
 margin:0;
@@ -28,6 +27,7 @@ border-radius:25px;
 padding:25px;
 margin-bottom:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.15);
+/* Keeps logos side-by-side on laptop */
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -37,18 +37,11 @@ gap: 20px;
 width: 140px;
 height: 140px;
 border-radius: 50%;
-object-fit: contain; 
-padding: 5px;        
-background: white;       /* Hub logo keeps this */
-border: 3px solid white; /* Hub logo keeps this */
+object-fit: contain; /* Forces the whole logo to fit inside without cutting text */
+padding: 5px;        /* White border spacing around the logo */
+background: white;
+border: 3px solid white;
 flex-shrink: 0;
-}
-
-/* SPECIAL RULE: Removes the background and border ONLY from the BET logo */
-.bet-logo {
-background: transparent !important;
-border: none !important;
-padding: 0px !important;
 }
 .header-text {
 flex-grow: 1;
@@ -170,36 +163,38 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 .gallery img:hover{transform:scale(1.05);}
 .full-width{grid-column:1/-1;}
 .card-header i{font-size:1.5rem;}
+
+/* MOBILE RESPONSIVE CODE */
 @media(max-width:900px){
 .grid{grid-template-columns:1fr;}
 .card-body{font-size:1rem;}
 
-/* Keeps everything side-by-side on mobile screens */
+/* Keeps logos side-by-side on mobile without dropping up/down */
 .header {
-flex-direction: row; /* Forces left-to-right alignment */
+flex-direction: row; 
 align-items: center;
 justify-content: space-between;
 padding: 15px;
 gap: 10px;
 }
-
-/* Shrinks the logos slightly so they fit cleanly on the sides */
+/* Scales down logos and fixes cut-off names on phone screens */
 .header-logo {
 width: 65px;  
 height: 65px;
+object-fit: contain;
+padding: 3px;
 }
-
-/* Adjusts the text size so it fits perfectly in the middle column */
+/* Fits headline text cleanly in the center */
 .header-text {
 flex-grow: 1;
 text-align: center;
 }
 .header h1 {
-font-size: 1.4rem; /* Makes the title fit without wrapping poorly */
+font-size: 1.4rem; 
 letter-spacing: 1px;
 }
 .header h2 {
-font-size: 0.85rem; /* Shrinks the subtitle slightly for mobile */
+font-size: 0.85rem; 
 letter-spacing: 1px;
 }
 }
@@ -209,16 +204,13 @@ letter-spacing: 1px;
 <body>
 <div class="container">
 
+<!-- THE NEW HEADER SECTION WITH BOTH LOGOS -->
 <div class="header">
-    <!-- BET Logo has the special 'bet-logo' class to strip away the border -->
-    <img src="bet-logo.jpg" alt="BET Logo" class="header-logo bet-logo">
-    
+    <img src="bet-logo.png" alt="BET Logo" class="header-logo">
     <div class="header-text">
         <h1>ADITYA-L1</h1>
         <h2>(India's First Dedicated Solar Mission)</h2>
     </div>
-    
-    <!-- Hub Logo stays completely original with its nice white outline frame -->
     <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo">
 </div>
 
