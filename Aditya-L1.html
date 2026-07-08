@@ -34,8 +34,8 @@ justify-content: space-between;
 gap: 20px;
 }
 .header-logo {
-width: 90px;
-height: 90px;
+width: 140px;
+height: 140px;
 border-radius: 50%;
 object-fit: cover;
 background: white;
@@ -164,8 +164,25 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 .card-header i{font-size:1.5rem;}
 @media(max-width:900px){
 .grid{grid-template-columns:1fr;}
-.header h1{font-size:2rem;}
 .card-body{font-size:1rem;}
+
+/* Fixes the header box so logos don't break out on mobile */
+.header {
+flex-direction: column;
+text-align: center;
+padding: 20px;
+gap: 15px;
+}
+.header-logo {
+width: 100px;  /* Scales down slightly on mobile so it doesn't look huge */
+height: 100px;
+}
+.header h1 {
+font-size: 2rem; /* Shrinks the headline font so it fits mobile screens */
+}
+.header h2 {
+font-size: 1.1rem;
+}
 }
 </style>
 </head>
