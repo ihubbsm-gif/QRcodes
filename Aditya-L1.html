@@ -37,10 +37,12 @@ gap: 20px;
 width: 140px;
 height: 140px;
 border-radius: 50%;
-object-fit: contain; /* Forces the whole logo to fit inside without cutting text */
-padding: 5px;        /* White border spacing around the logo */
-background: white;
-border: 3px solid white;
+/* Changed from contain to scale to zoom in and fill the white space */
+object-fit: cover; 
+transform: scale(1.15); 
+padding: 5px;        
+background: white;       
+border: 3px solid white; 
 flex-shrink: 0;
 }
 .header-text {
@@ -181,8 +183,11 @@ gap: 10px;
 .header-logo {
 width: 65px;  
 height: 65px;
-object-fit: contain;
-padding: 3px;
+/* Keeps it zoomed in on mobile screens too */
+object-fit: cover;
+transform: scale(1.15);
+background: white;       
+border: 3px solid white; 
 }
 /* Fits headline text cleanly in the center */
 .header-text {
