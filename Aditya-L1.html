@@ -37,10 +37,18 @@ gap: 20px;
 width: 140px;
 height: 140px;
 border-radius: 50%;
-object-fit: cover;
-background: white;
-border: 2px solid white;
+object-fit: contain; 
+padding: 5px;        
+background: white;       /* Hub logo keeps this */
+border: 3px solid white; /* Hub logo keeps this */
 flex-shrink: 0;
+}
+
+/* SPECIAL RULE: Removes the background and border ONLY from the BET logo */
+.bet-logo {
+background: transparent !important;
+border: none !important;
+padding: 0px !important;
 }
 .header-text {
 flex-grow: 1;
@@ -202,11 +210,15 @@ letter-spacing: 1px;
 <div class="container">
 
 <div class="header">
-    <img src="bet-logo.png" alt="BET Logo" class="header-logo">
+    <!-- BET Logo has the special 'bet-logo' class to strip away the border -->
+    <img src="bet-logo.jpg" alt="BET Logo" class="header-logo bet-logo">
+    
     <div class="header-text">
         <h1>ADITYA-L1</h1>
         <h2>(India's First Dedicated Solar Mission)</h2>
     </div>
+    
+    <!-- Hub Logo stays completely original with its nice white outline frame -->
     <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo">
 </div>
 
