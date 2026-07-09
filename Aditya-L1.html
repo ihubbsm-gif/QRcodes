@@ -27,48 +27,41 @@ border-radius:25px;
 padding:25px;
 margin-bottom:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.15);
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
 }
-
-/* DESKTOP LOGO BASE STYLES */
-.header-logo {
-width: 130px;
-height: 130px;
-border-radius: 50%;
-object-fit: cover;       
-padding: 0px;            
-background: white;       
-border: 2px solid white; 
-flex-shrink: 0;
-overflow: hidden;
+.logo-wrapper{
+width:120px;
+height:120px;
+border-radius:50%;
+overflow:hidden;
+flex-shrink:0;
 }
-
-/* INTERNAL EMBLEM ZOOM TO REDUCE EXTRA WHITE BORDER MATCHING THE BLUE TEXT RING */
-.bet-logo {
-transform: scale(1.22); 
+.header-logo{
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:center;
+transform:scale(1.35);
+display:block;
 }
-.hub-logo {
-transform: scale(1.22); 
-}
-
-.header-text {
-flex-grow: 1;
-text-align: center;
+.header-text{
+flex-grow:1;
+text-align:center;
 }
 .header h1{
 font-size:4rem;
 letter-spacing:3px;
 font-weight:900;
-margin: 0;
+margin:0;
 }
 .header h2{
 font-size:1.5rem;
 letter-spacing:3px;
 font-weight:600;
-margin: 5px 0 0 0;
+margin:5px 0 0 0;
 }
 .grid{
 display:grid;
@@ -114,27 +107,6 @@ line-height:1.7;
 .cyan .card-header{background:#eafcff;}
 ul{padding-left:25px;}
 li{margin-bottom:12px;}
-.sub-box{
-background:#f8f9fa;
-border-radius:12px;
-padding:15px;
-margin-bottom:15px;
-border-left:4px solid #5aa9ff;
-}
-.sub-box h4{
-font-size:1.05rem;
-font-weight:700;
-color:#003d91;
-margin-bottom:8px;
-}
-.sub-box ul{
-padding-left:18px;
-margin:0;
-}
-.sub-box li{
-font-size:0.95rem;
-margin-bottom:6px;
-}
 .obs-box{
 background:#f8f9fa;
 border-radius:12px;
@@ -174,55 +146,30 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 .gallery img:hover{transform:scale(1.05);}
 .full-width{grid-column:1/-1;}
 .card-header i{font-size:1.5rem;}
-
-/* MOBILE RESPONSIVE CODE */
 @media(max-width:900px){
 .grid{grid-template-columns:1fr;}
 .card-body{font-size:1rem;}
-
-.header {
-flex-direction: row; 
-align-items: center;
-justify-content: space-between;
-padding: 12px;
-gap: 8px;
+.header{
+flex-direction:row;
+align-items:center;
+justify-content:space-between;
+padding:12px;
+gap:8px;
 }
-
-.header-logo {
-border-radius: 50%;
-object-fit: cover;
-padding: 0px;
-background: white;       
-border: 2px solid white; 
-flex-shrink: 0;
-overflow: hidden;
+.logo-wrapper{
+width:70px;
+height:70px;
 }
-
-/* MAINTAINING YOUR 70PX SIZE BUT FIXING THE WHITE EDGE PORTION */
-.bet-logo {
-width: 65px;  
-height: 65px;
-transform: scale(1.22);
+.header-logo{
+transform:scale(1.35);
 }
-
-/* HUB LOGO CIRCLE REMAINS SECURE AT 75PX */
-.hub-logo {
-width: 68px;  
-height: 68px;
-transform: scale(1.22);
+.header h1{
+font-size:1.3rem;
+letter-spacing:0.5px;
 }
-
-.header-text {
-flex-grow: 1;
-text-align: center;
-}
-.header h1 {
-font-size: 1.3rem; 
-letter-spacing: 0.5px;
-}
-.header h2 {
-font-size: 0.8rem; 
-letter-spacing: 0.5px;
+.header h2{
+font-size:0.8rem;
+letter-spacing:0.5px;
 }
 }
 </style>
@@ -232,16 +179,16 @@ letter-spacing: 0.5px;
 <div class="container">
 
 <div class="header">
-    <!-- BET Logo (Kept at your custom 70px size) -->
-    <img src="bet-logo.png" alt="BET Logo" class="header-logo bet-logo">
-    
+    <div class="logo-wrapper">
+        <img src="bet-logo.png" alt="BET Logo" class="header-logo">
+    </div>
     <div class="header-text">
         <h1>ADITYA-L1</h1>
         <h2>(India's First Dedicated Solar Mission)</h2>
     </div>
-    
-    <!-- Hub Logo (Stays normal size) -->
-    <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo hub-logo">
+    <div class="logo-wrapper">
+        <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo">
+    </div>
 </div>
 
 <div class="grid">
