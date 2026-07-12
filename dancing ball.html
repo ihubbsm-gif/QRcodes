@@ -28,18 +28,39 @@ border-radius:25px;
 padding:25px;
 margin-bottom:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.15);
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+}
+.header-logo{
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+padding:0px;
+background:white;
+border:2px solid white;
+flex-shrink:0;
+overflow:hidden;
+}
+.bet-logo{transform:scale(1.28);}
+.hub-logo{transform:scale(1.22);}
+.header-text{
+flex-grow:1;
+text-align:center;
 }
 .header h1{
-text-align:center;
-font-size:4rem;
+font-size:3rem;
 letter-spacing:3px;
 font-weight:900;
+margin:0;
 }
 .header h2{
-text-align:center;
 font-size:1.5rem;
 letter-spacing:3px;
 font-weight:600;
+margin:5px 0 0 0;
 }
 .grid{
 display:grid;
@@ -101,8 +122,32 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 .card-header i{font-size:1.5rem;}
 @media(max-width:900px){
 .grid{grid-template-columns:1fr;}
-.header h1{font-size:2rem;}
 .card-body{font-size:1rem;}
+.header{
+flex-direction:row;
+align-items:center;
+justify-content:space-between;
+padding:12px;
+gap:8px;
+}
+.header-logo{
+width:75px;
+height:75px;
+object-fit:cover;
+padding:0px;
+background:white;
+border:2px solid white;
+}
+.bet-logo{transform:scale(1.12);}
+.hub-logo{transform:scale(1.12);}
+.header h1{
+font-size:1.6rem;
+letter-spacing:0.5px;
+}
+.header h2{
+font-size:0.8rem;
+letter-spacing:0.5px;
+}
 }
 </style>
 </head>
@@ -111,8 +156,12 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 <div class="container">
 
 <div class="header">
-    <h1>DANCING BALLS</h1>
-    <h2>(Mechanical Properties of Fluid)</h2>
+    <img src="bet-logo.png" alt="BET Logo" class="header-logo bet-logo">
+    <div class="header-text">
+        <h1>DANCING BALLS</h1>
+        <h2>(Mechanical Properties of Fluid)</h2>
+    </div>
+    <img src="hub-logo.png" alt="Innovation Hub Logo" class="header-logo hub-logo">
 </div>
 
 <div class="grid">
